@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Serenity Spot, A Campus Greenspace Initiative</title>
+  <meta name="description" content="A student-led social action project building a campus greenspace to support student mental health." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage:  { 50:'#f4f6f0',100:'#e6ebda',200:'#cdd7b6',300:'#a8b988',400:'#8a9c66',500:'#718355',600:'#5a6a44',700:'#475437',800:'#3a442e',900:'#323a29' },
+            earth: { 50:'#faf6f1',100:'#f3ead9',200:'#e6d3b2',300:'#d4b482',400:'#bc8e54',500:'#926c44',600:'#7a583a',700:'#624632',800:'#523b2d',900:'#463329' },
+            sky:   '#a8dadc',
+            cream: '#f8f9fa'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"','Georgia','serif'],
+            sans:  ['Inter','system-ui','sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-cream text-sage-900">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur border-b border-sage-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="w-9 h-9 rounded-full bg-sage-500 text-cream flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.8 0-5 2.2-5 5 0 .3 0 .6.1.9C5.3 8.5 4 10.1 4 12c0 2.2 1.8 4 4 4h3v5h2v-5h3c2.2 0 4-1.8 4-4 0-1.9-1.3-3.5-3.1-4.1.1-.3.1-.6.1-.9 0-2.8-2.2-5-5-5z"/></svg></span>
+        <span class="font-serif text-xl text-sage-700">The Serenity Spot</span>
+      </a>
+      <button data-nav-toggle aria-expanded="false" aria-label="Toggle navigation" class="md:hidden p-2 rounded text-sage-700">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <nav data-nav-menu class="hidden md:flex absolute md:static top-full left-0 right-0 bg-cream md:bg-transparent border-b md:border-0 border-sage-100 flex-col md:flex-row gap-1 md:gap-6 px-4 md:px-0 py-4 md:py-0 text-sage-600">
+        <a data-nav-link href="index.html" class="hover:text-sage-700 transition">Home</a>
+        <a data-nav-link href="issue.html" class="hover:text-sage-700 transition">The Issue</a>
+        <a data-nav-link href="framework.html" class="hover:text-sage-700 transition">Framework</a>
+        <a data-nav-link href="action.html" class="hover:text-sage-700 transition">Action Plan</a>
+        <a data-nav-link href="involved.html" class="hover:text-sage-700 transition">Get Involved</a>
+        <a data-nav-link href="reflection.html" class="hover:text-sage-700 transition">Reflection</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="bg-cream-textured">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="uppercase tracking-[0.2em] text-sage-600 text-xs mb-5">A Social Action Project</p>
+          <h1 class="font-serif text-5xl md:text-6xl leading-[1.05] text-sage-800 mb-6">
+            Room to <em class="text-earth-500 not-italic">breathe</em>,<br/>
+            room to <em class="text-sage-600 not-italic">belong</em>.
+          </h1>
+          <p class="text-lg text-sage-700/90 leading-relaxed mb-8 max-w-xl">
+            <strong>The Serenity Spot</strong> is a student-led initiative to transform an underused corner of campus into a living greenspace, a place where students can rest, gather, and reconnect with the calming presence of nature.
+          </p>
+          <div class="flex flex-wrap gap-3">
+            <a href="action.html" class="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-cream font-medium px-6 py-3 rounded-full transition">
+              See the Action Plan
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+            </a>
+            <a href="involved.html" class="inline-flex items-center gap-2 border border-sage-500 text-sage-700 hover:bg-sage-50 font-medium px-6 py-3 rounded-full transition">
+              Get Involved
+            </a>
+          </div>
+        </div>
+        <div class="rounded-3xl aspect-[4/5] overflow-hidden shadow-xl bg-sage-100">
+          <img src="assets/images/hero.jpg" alt="A pink magnolia in full bloom in front of a brick building on the University of Maryland campus." class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MISSION ============ -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 py-20 text-center">
+      <p class="uppercase tracking-[0.25em] text-earth-500 text-xs mb-4">Our Mission</p>
+      <h2 class="font-serif text-3xl md:text-4xl text-sage-800 leading-tight mb-6 max-w-3xl mx-auto" style="text-wrap: balance;">
+        To restore a small piece of the campus to the students who walk it every day, not solely as an aesthetic upgrade, but as an act of <em class="text-earth-500 not-italic">care</em> and <em class="text-earth-500 not-italic">community</em>.
+      </h2>
+      <div class="leaf-divider max-w-md mx-auto mt-10">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5 21c8 0 14-6 14-14V5h-2C9 5 3 11 3 19v2h2zm2-2c1-5 5-9 10-10-1 5-5 9-10 10z"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ THE ORIGIN ============ -->
+    <section class="bg-sage-50 border-y border-sage-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 grid md:grid-cols-2 gap-14 items-center">
+        <figure class="order-2 md:order-1">
+          <div class="rounded-3xl aspect-[5/4] overflow-hidden bg-sage-100">
+            <img src="assets/images/origin.jpg" alt="UMD students walking through a campus pathway framed by fall foliage." class="w-full h-full object-cover" />
+          </div>
+          <figcaption class="text-xs text-sage-600 italic mt-3 text-center">
+            Photo via UMD Today, <a href="https://today.umd.edu/hazy-not-so-lazy-days-of-fall" target="_blank" rel="noopener" class="underline underline-offset-4 hover:text-sage-800">"Hazy, Not-So-Lazy Days of Fall."</a>
+          </figcaption>
+        </figure>
+        <div class="order-1 md:order-2">
+          <p class="uppercase tracking-[0.2em] text-sage-600 text-xs mb-4">The Origin</p>
+          <h2 class="font-serif text-4xl text-sage-800 mb-5">A regular day, walking out of Iribe.</h2>
+          <p class="text-sage-700 leading-relaxed mb-4">
+            It was a regular day, and I was walking out of the Brendan Iribe Center. It had been a long one: heavy classes, social stress, job applications, all the regulars of being a college student today. Headphones on, I walked through the plaza, and I could feel the gloom and sheer exhaustion of it all. Not a single conversation going on. Everyone inside or scattering away. My first thought, like the hivemind around me, was simple: <em>I want to leave.</em> Let me get to Animal Sciences, my favorite outdoor nature space on campus.
+          </p>
+          <p class="text-sage-700 leading-relaxed mb-4">
+            When I started generating ideas for a social change project, that memory stuck with me. I wanted to be outdoors. I wanted to socialize. I couldn't do either in that spot. What pushed it further for me was the sheer number of students who walk through that plaza every single day. Computer Science is the biggest department on campus, and yet, in its outdoor setting, one of the most lifeless.
+          </p>
+          <p class="text-sage-700 leading-relaxed mb-6">
+            This project sets out to change that, and to bring social and therapeutic elements into a place that needs both.
+          </p>
+          <a href="issue.html" class="inline-flex items-center gap-2 text-sage-700 font-medium hover:text-sage-800 underline-offset-4 hover:underline">
+            Read the research →
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECT SUMMARY CARDS ============ -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+      <div class="text-center mb-14">
+        <p class="uppercase tracking-[0.25em] text-earth-500 text-xs mb-3">The Project, At a Glance</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-sage-800">What we're building.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <article class="card-lift bg-white border border-sage-100 rounded-2xl p-7">
+          <div class="w-12 h-12 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8 6 6 9 6 13a6 6 0 0012 0c0-4-2-7-6-11z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-sage-800 mb-2">A living space</h3>
+          <p class="text-sage-700/90 leading-relaxed text-sm">Native plantings, shade trees, and seating designed for the CSI Plaza at the University of Maryland.</p>
+        </article>
+
+        <article class="card-lift bg-white border border-sage-100 rounded-2xl p-7">
+          <div class="w-12 h-12 rounded-xl bg-earth-100 text-earth-500 flex items-center justify-center mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 20h16v-2H4v2zM6 16h12V8H6v8zM10 4h4v3h-4z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-sage-800 mb-2">Designed for community</h3>
+          <p class="text-sage-700/90 leading-relaxed text-sm">A study and socializing spot for students, built around what they said they actually needed.</p>
+        </article>
+
+        <article class="card-lift bg-white border border-sage-100 rounded-2xl p-7">
+          <div class="w-12 h-12 rounded-xl bg-sky/30 text-sage-700 flex items-center justify-center mb-5">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 12a4 4 0 100-8 4 4 0 000 8zm0 2c-3 0-9 1.5-9 4.5V21h18v-2.5c0-3-6-4.5-9-4.5z"/></svg>
+          </div>
+          <h3 class="font-serif text-2xl text-sage-800 mb-2">Built with the community</h3>
+          <p class="text-sage-700/90 leading-relaxed text-sm">In partnership with the Facilities team, the Counseling Center, and potentially a studio group in the future.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ STATS STRIP ============ -->
+    <section class="bg-sage-700 text-cream">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 grid sm:grid-cols-3 gap-8 text-center">
+        <div>
+          <p class="font-serif text-5xl text-cream mb-2">34</p>
+          <p class="uppercase tracking-widest text-xs text-sage-200">Students surveyed</p>
+        </div>
+        <div>
+          <p class="font-serif text-5xl text-cream mb-2">3</p>
+          <p class="uppercase tracking-widest text-xs text-sage-200">Partner organizations</p>
+        </div>
+        <div>
+          <p class="font-serif text-5xl text-cream mb-2">10+</p>
+          <p class="uppercase tracking-widest text-xs text-sage-200">Stakeholders engaged</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 py-20">
+      <div class="grid md:grid-cols-5 gap-10 items-center">
+        <figure class="md:col-span-2">
+          <div class="rounded-3xl aspect-[3/4] overflow-hidden bg-sage-100">
+            <img src="assets/images/atharv.jpg" alt="Atharv Umap, the student leading The Serenity Spot, in a green terraced landscape." class="w-full h-full object-cover" />
+          </div>
+        </figure>
+        <div class="md:col-span-3">
+          <p class="uppercase tracking-[0.2em] text-earth-500 text-xs mb-4">About</p>
+          <h2 class="font-serif text-3xl md:text-4xl text-sage-800 mb-5">Led by a student who walks the plaza.</h2>
+          <p class="text-sage-700 leading-relaxed">
+            The Serenity Spot is led by <strong>Atharv Umap</strong>, a University of Maryland student majoring in Computer Science with minors in Math and Leadership Studies. He's carrying this project through <strong>LEAD320/321: Advanced Social Action Seminar</strong>, focused on the CSI&ndash;IRB pathway. This site is the project's working record, one semester of conversations, plans, and small wins, built so the position can be picked up by whoever takes it forward next.
+          </p>
+          <div class="flex items-center gap-3 mt-6">
+            <a href="https://www.linkedin.com/in/atharv-umap-459329271" target="_blank" rel="noopener" aria-label="Atharv Umap on LinkedIn" class="w-10 h-10 rounded-full bg-sage-100 text-sage-700 flex items-center justify-center hover:bg-sage-200 hover:text-sage-800 transition">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://github.com/AtharvUmap" target="_blank" rel="noopener" aria-label="Atharv Umap on GitHub" class="w-10 h-10 rounded-full bg-sage-100 text-sage-700 flex items-center justify-center hover:bg-sage-200 hover:text-sage-800 transition">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="mailto:atharvumap@gmail.com" aria-label="Email Atharv Umap" class="w-10 h-10 rounded-full bg-sage-100 text-sage-700 flex items-center justify-center hover:bg-sage-200 hover:text-sage-800 transition">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-24">
+      <div class="bg-gradient-to-br from-sage-100 to-sky/40 rounded-3xl p-10 md:p-14 text-center">
+        <h2 class="font-serif text-4xl text-sage-800 mb-4">Walk with me.</h2>
+        <p class="text-sage-700 max-w-xl mx-auto mb-8">
+          Whether you're a student, a faculty advisor, or a neighbor, there's a way for you to take part in growing the community, not just The Serenity Spot.
+        </p>
+        <a href="involved.html" class="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-cream font-medium px-8 py-3 rounded-full transition">
+          See how you can help
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-sage-700 text-sage-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-9 h-9 rounded-full bg-cream text-sage-700 flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.8 0-5 2.2-5 5 0 .3 0 .6.1.9C5.3 8.5 4 10.1 4 12c0 2.2 1.8 4 4 4h3v5h2v-5h3c2.2 0 4-1.8 4-4 0-1.9-1.3-3.5-3.1-4.1.1-.3.1-.6.1-.9 0-2.8-2.2-5-5-5z"/></svg></span>
+          <span class="font-serif text-xl text-cream">The Serenity Spot</span>
+        </div>
+        <p class="text-sage-200 text-sm leading-relaxed">A student-led campus greenspace initiative, building room to breathe, to gather, and to belong.</p>
+      </div>
+      <div>
+        <h3 class="font-serif text-cream text-lg mb-3">Mental Health Resources</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://988lifeline.org" target="_blank" rel="noopener">988 Suicide &amp; Crisis Lifeline</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://www.nami.org" target="_blank" rel="noopener">NAMI, National Alliance on Mental Illness</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://terplink.umd.edu/organization/active-minds" target="_blank" rel="noopener">Active Minds at UMD</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://counseling.umd.edu/" target="_blank" rel="noopener">UMD Counseling Center</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://www.crisistextline.org" target="_blank" rel="noopener">Crisis Text Line, Text HOME to 741741</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-serif text-cream text-lg mb-3">Site</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cream" href="index.html">Home</a></li>
+          <li><a class="hover:text-cream" href="issue.html">The Issue</a></li>
+          <li><a class="hover:text-cream" href="framework.html">Framework</a></li>
+          <li><a class="hover:text-cream" href="action.html">Action Plan</a></li>
+          <li><a class="hover:text-cream" href="involved.html">Get Involved</a></li>
+          <li><a class="hover:text-cream" href="reflection.html">Reflection</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-sage-600">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between text-sm text-sage-300">
+        <p>&copy; <span id="footer-year"></span> Atharv Umap. The Serenity Spot, built as a Social Action capstone project.</p>
+        <p class="italic font-serif">"In every walk with nature, one receives far more than they seek." · John Muir</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

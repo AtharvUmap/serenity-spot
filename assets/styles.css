@@ -1,0 +1,310 @@
+/* The Serenity Spot, shared styles
+   Tailwind utilities are loaded via the Play CDN in each page <head>.
+   This file holds custom decoration that's awkward to express in pure utilities. */
+
+:root {
+  --sage-50:  #f4f6f0;
+  --sage-100: #e6ebda;
+  --sage-200: #cdd7b6;
+  --sage-300: #a8b988;
+  --sage-400: #8a9c66;
+  --sage-500: #718355;
+  --sage-600: #5a6a44;
+  --sage-700: #475437;
+  --earth-300: #d4b482;
+  --earth-400: #bc8e54;
+  --earth-500: #926c44;
+  --earth-700: #624632;
+  --sky:    #a8dadc;
+  --cream:  #f8f9fa;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--cream);
+  color: #2f352a;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip; /* keep scattered role cards from triggering a horizontal scrollbar */
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  letter-spacing: -0.005em;
+}
+
+/* Soft, organic placeholder image, used wherever we want a "leaf-textured" hero */
+.placeholder-leaf {
+  background-color: var(--sage-200);
+  background-image:
+    radial-gradient(at 20% 20%, rgba(113,131,85,0.55) 0, transparent 45%),
+    radial-gradient(at 80% 30%, rgba(168,218,220,0.45) 0, transparent 50%),
+    radial-gradient(at 60% 80%, rgba(146,108,68,0.35) 0, transparent 55%),
+    radial-gradient(at 30% 70%, rgba(71,84,55,0.40) 0, transparent 60%);
+  position: relative;
+  overflow: hidden;
+}
+.placeholder-leaf::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'><g fill='none' stroke='%23ffffff' stroke-opacity='0.10' stroke-width='1.2'><path d='M10 60 Q 60 0 110 60 Q 60 120 10 60 Z'/><path d='M30 60 Q 60 30 90 60 Q 60 90 30 60 Z'/><path d='M60 10 L 60 110'/></g></svg>");
+  background-size: 220px 220px;
+  opacity: 0.6;
+}
+.placeholder-label {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255,255,255,0.92);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.05rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-shadow: 0 1px 8px rgba(0,0,0,0.35);
+  z-index: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Section divider, a thin, organic line break between sections */
+.leaf-divider {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--sage-500);
+}
+.leaf-divider::before,
+.leaf-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--sage-300), transparent);
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.card-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px -20px rgba(71, 84, 55, 0.35);
+}
+
+/* Scattered role cards (Social Change Ecosystem) — each card is tossed
+   onto the page at a different tilt and offset, breaking out of the
+   3x3 grid. They straighten and lift forward on hover. */
+.role-card {
+  transition: transform 360ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 360ms ease;
+  transform-origin: center center;
+  position: relative;
+  z-index: 1;
+}
+
+/* Mobile (< 768px): gentle tilt only, no horizontal translation or
+   the cards fly off the single-column layout. */
+.role-card:nth-child(9n+1) { transform: rotate(-2deg)   translateY(6px); }
+.role-card:nth-child(9n+2) { transform: rotate(1.6deg)  translateY(-4px); }
+.role-card:nth-child(9n+3) { transform: rotate(-1deg)   translateY(10px); }
+.role-card:nth-child(9n+4) { transform: rotate(2.4deg)  translateY(-2px); }
+.role-card:nth-child(9n+5) { transform: rotate(-1.8deg) translateY(4px); }
+.role-card:nth-child(9n+6) { transform: rotate(1.2deg)  translateY(8px); }
+.role-card:nth-child(9n+7) { transform: rotate(-2.6deg) translateY(-3px); }
+.role-card:nth-child(9n+8) { transform: rotate(0.9deg)  translateY(5px); }
+.role-card:nth-child(9n+9) { transform: rotate(-1.4deg) translateY(-5px); }
+
+/* Tablet/desktop: scattered but legible — rotations stay within the
+   ±5°–22° range, with translations that push cards past their cells
+   without making them unreadable. */
+@media (min-width: 768px) {
+  .role-card:nth-child(9n+1) { transform: rotate(-12deg)  translate(-50px,  16px); z-index: 2; }
+  .role-card:nth-child(9n+2) { transform: rotate(8deg)    translate( 18px, -28px); z-index: 5; }
+  .role-card:nth-child(9n+3) { transform: rotate(-4deg)   translate( 55px,  30px); z-index: 3; }
+  .role-card:nth-child(9n+4) { transform: rotate(18deg)   translate(-60px,  -8px); z-index: 6; }
+  .role-card:nth-child(9n+5) { transform: rotate(-7deg)   translate( 22px,  26px); z-index: 1; }
+  .role-card:nth-child(9n+6) { transform: rotate(11deg)   translate( 50px, -12px); z-index: 4; }
+  .role-card:nth-child(9n+7) { transform: rotate(-22deg)  translate(-35px, -20px); z-index: 7; }
+  .role-card:nth-child(9n+8) { transform: rotate(5deg)    translate( 12px,  32px); z-index: 2; }
+  .role-card:nth-child(9n+9) { transform: rotate(-9deg)   translate(-28px, -14px); z-index: 5; }
+}
+
+.role-card:hover {
+  transform: rotate(0deg) translate(0, -14px) scale(1.05);
+  box-shadow: 0 32px 60px -18px rgba(71, 84, 55, 0.55);
+  z-index: 50;
+}
+
+/* Pull-quote */
+.pull-quote {
+  border-left: 4px solid var(--sage-500);
+  background: linear-gradient(90deg, rgba(168,218,220,0.18), transparent);
+  padding: 1.25rem 1.5rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.35rem;
+  line-height: 1.5;
+  color: #3a4232;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(40, 50, 30, 0.55);
+  backdrop-filter: blur(4px);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  padding: 1rem;
+}
+.modal-backdrop.is-open { display: flex; }
+.modal-card {
+  background: white;
+  max-width: 640px;
+  width: 100%;
+  border-radius: 18px;
+  padding: 2rem;
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,0.35);
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: var(--cream);
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: var(--sage-700);
+}
+.modal-close:hover { background: var(--sage-100); }
+
+/* Accessibility, focus rings */
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--sage-500);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Skip-to-content link (visually hidden until focused) */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  background: var(--sage-700);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0 0 8px 0;
+  z-index: 100;
+}
+.skip-link:focus {
+  left: 0;
+  top: 0;
+}
+
+/* Subtle background texture for hero areas */
+.bg-cream-textured {
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(circle at 10% 0%, rgba(168,218,220,0.18), transparent 35%),
+    radial-gradient(circle at 90% 100%, rgba(113,131,85,0.15), transparent 40%);
+  position: relative;
+  overflow: hidden;
+}
+/* Direct children sit above the corner branches */
+.bg-cream-textured > * {
+  position: relative;
+  z-index: 1;
+}
+/* Decorative branches reaching in from the top corners.
+   Hand-drawn SVG strokes with small leaves at twig ends. The right-side
+   branch is the same SVG mirrored via scaleX(-1). aria-hidden by default
+   (CSS-only, no HTML role). */
+.bg-cream-textured::before,
+.bg-cream-textured::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 320px;
+  height: 320px;
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: contain;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 320'><defs><linearGradient id='g1' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%235a6a44' stop-opacity='0.5'/><stop offset='0.5' stop-color='%235a6a44' stop-opacity='0.1'/><stop offset='1' stop-color='%235a6a44' stop-opacity='0.42'/></linearGradient><linearGradient id='g2' x1='0' y1='0' x2='1' y2='0'><stop offset='0' stop-color='%235a6a44' stop-opacity='0.5'/><stop offset='1' stop-color='%235a6a44' stop-opacity='0.06'/></linearGradient><linearGradient id='g3' x1='0' y1='0' x2='0' y2='1'><stop offset='0' stop-color='%235a6a44' stop-opacity='0.45'/><stop offset='0.55' stop-color='%235a6a44' stop-opacity='0.12'/><stop offset='1' stop-color='%235a6a44' stop-opacity='0.4'/></linearGradient><linearGradient id='g4' x1='1' y1='0' x2='0' y2='0'><stop offset='0' stop-color='%235a6a44' stop-opacity='0.08'/><stop offset='1' stop-color='%235a6a44' stop-opacity='0.45'/></linearGradient></defs><g fill='none' stroke-linecap='round' stroke-linejoin='round'><path d='M-15,-15 C 20,15 50,45 80,75 C 100,95 115,115 125,135' stroke='url(%23g1)' stroke-width='1.6'/><path d='M125,135 C 145,170 160,210 165,250 C 168,275 165,295 158,310' stroke='url(%23g3)' stroke-width='1.3'/><path d='M150,200 C 175,215 200,220 225,215' stroke='url(%23g2)' stroke-width='1'/><path d='M165,250 C 185,265 205,272 225,275' stroke='url(%23g2)' stroke-width='0.9'/><path d='M65,55 C 110,70 155,82 200,86 C 245,88 280,82 315,68' stroke='url(%23g1)' stroke-width='1.2'/><path d='M225,87 C 240,75 250,60 255,45' stroke='url(%23g4)' stroke-width='0.9'/><path d='M170,84 C 178,95 188,105 198,110' stroke='url(%23g2)' stroke-width='0.9'/><path d='M45,35 C 35,80 30,130 35,180 C 38,220 45,255 55,285' stroke='url(%23g3)' stroke-width='1.1'/><path d='M30,150 C 20,160 12,175 8,190' stroke='url(%23g4)' stroke-width='0.9'/><path d='M40,210 C 30,222 22,235 18,248' stroke='url(%23g2)' stroke-width='0.9'/></g><g opacity='0.55'><ellipse cx='315' cy='68' rx='9' ry='3.5' transform='rotate(-25 315 68)' fill='%23718355'/><ellipse cx='255' cy='45' rx='4' ry='8' transform='rotate(-20 255 45)' fill='%238a9c66'/><ellipse cx='198' cy='110' rx='4' ry='8' transform='rotate(20 198 110)' fill='%23718355'/><ellipse cx='150' cy='80' rx='5' ry='2.5' transform='rotate(-10 150 80)' fill='%238a9c66'/><ellipse cx='275' cy='75' rx='6' ry='2.8' transform='rotate(-15 275 75)' fill='%23718355'/><ellipse cx='225' cy='215' rx='8' ry='3.5' transform='rotate(15 225 215)' fill='%238a9c66'/><ellipse cx='225' cy='275' rx='8' ry='3.5' transform='rotate(10 225 275)' fill='%23718355'/><ellipse cx='158' cy='310' rx='4' ry='8' transform='rotate(-15 158 310)' fill='%238a9c66'/><ellipse cx='140' cy='170' rx='3' ry='6' transform='rotate(45 140 170)' fill='%23718355'/><ellipse cx='167' cy='225' rx='3' ry='6' transform='rotate(-30 167 225)' fill='%238a9c66'/><ellipse cx='8' cy='190' rx='3.5' ry='8' transform='rotate(-15 8 190)' fill='%238a9c66'/><ellipse cx='18' cy='248' rx='3.5' ry='7' transform='rotate(-25 18 248)' fill='%23718355'/><ellipse cx='55' cy='285' rx='4' ry='8' transform='rotate(15 55 285)' fill='%238a9c66'/><ellipse cx='32' cy='110' rx='5' ry='2.5' transform='rotate(50 32 110)' fill='%23718355'/></g></svg>");
+}
+.bg-cream-textured::before { left: 0; }
+.bg-cream-textured::after  { right: 0; transform: scaleX(-1); }
+@media (max-width: 640px) {
+  .bg-cream-textured::before,
+  .bg-cream-textured::after {
+    width: 160px;
+    height: 160px;
+    opacity: 0.7;
+  }
+}
+
+/* Timeline */
+.timeline { position: relative; padding-left: 2.25rem; }
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.6rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--sage-300), var(--earth-400));
+  border-radius: 2px;
+}
+.timeline-item { position: relative; }
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.85rem;
+  top: 0.45rem;
+  width: 14px;
+  height: 14px;
+  background: var(--sage-500);
+  border: 3px solid var(--cream);
+  border-radius: 999px;
+  box-shadow: 0 0 0 2px var(--sage-300);
+}
+
+/* Comic-style sparkle: static background decoration around the
+   "Sustaining the spark" reflection entry. Each spark element gets its
+   own --spark-rot custom property inline so every spark sits at its
+   own angle. No animation — they read as a quiet pattern, not motion. */
+.spark-twinkle {
+  display: inline-block;
+  opacity: 0.45;
+  transform: rotate(var(--spark-rot, 0deg));
+  transform-origin: center center;
+}
+
+/* Ripple effect: concentric rings expand outward from a center point and
+   fade as they grow, like a stone dropped in still water. Used to
+   decorate the "A ripple of change" reflection entry. Tuned to read as
+   a quiet background texture, not foreground motion. */
+@keyframes ripple-expand {
+  0%   { transform: scale(0.3); opacity: 0; }
+  15%  { opacity: 0.22; }
+  100% { transform: scale(2.6); opacity: 0; }
+}
+.ripple-center { position: absolute; pointer-events: none; z-index: 0; }
+.ripple-ring {
+  position: absolute;
+  inset: 0;
+  border: 1px solid currentColor;
+  border-radius: 9999px;
+  animation: ripple-expand 4.6s ease-out infinite;
+  transform-origin: center center;
+}

@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Change Framework, The Serenity Spot</title>
+  <meta name="description" content="The 8Cs Social Change Model, Social Change Wheel, and Roles in the Social Change Ecosystem applied to The Serenity Spot." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage:  { 50:'#f4f6f0',100:'#e6ebda',200:'#cdd7b6',300:'#a8b988',400:'#8a9c66',500:'#718355',600:'#5a6a44',700:'#475437',800:'#3a442e',900:'#323a29' },
+            earth: { 50:'#faf6f1',100:'#f3ead9',200:'#e6d3b2',300:'#d4b482',400:'#bc8e54',500:'#926c44',600:'#7a583a',700:'#624632',800:'#523b2d',900:'#463329' },
+            sky:   '#a8dadc',
+            cream: '#f8f9fa'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"','Georgia','serif'],
+            sans:  ['Inter','system-ui','sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-cream text-sage-900">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur border-b border-sage-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="w-9 h-9 rounded-full bg-sage-500 text-cream flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.8 0-5 2.2-5 5 0 .3 0 .6.1.9C5.3 8.5 4 10.1 4 12c0 2.2 1.8 4 4 4h3v5h2v-5h3c2.2 0 4-1.8 4-4 0-1.9-1.3-3.5-3.1-4.1.1-.3.1-.6.1-.9 0-2.8-2.2-5-5-5z"/></svg></span>
+        <span class="font-serif text-xl text-sage-700">The Serenity Spot</span>
+      </a>
+      <button data-nav-toggle aria-expanded="false" aria-label="Toggle navigation" class="md:hidden p-2 rounded text-sage-700">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <nav data-nav-menu class="hidden md:flex absolute md:static top-full left-0 right-0 bg-cream md:bg-transparent border-b md:border-0 border-sage-100 flex-col md:flex-row gap-1 md:gap-6 px-4 md:px-0 py-4 md:py-0 text-sage-600">
+        <a data-nav-link href="index.html" class="hover:text-sage-700 transition">Home</a>
+        <a data-nav-link href="issue.html" class="hover:text-sage-700 transition">The Issue</a>
+        <a data-nav-link href="framework.html" class="hover:text-sage-700 transition">Framework</a>
+        <a data-nav-link href="action.html" class="hover:text-sage-700 transition">Action Plan</a>
+        <a data-nav-link href="involved.html" class="hover:text-sage-700 transition">Get Involved</a>
+        <a data-nav-link href="reflection.html" class="hover:text-sage-700 transition">Reflection</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HEADER ============ -->
+    <section class="bg-cream-textured">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 py-20 md:py-24 text-center">
+        <p class="uppercase tracking-[0.25em] text-sage-600 text-xs mb-4">Course Frameworks</p>
+        <h1 class="font-serif text-5xl md:text-6xl text-sage-800 mb-5">A Framework for Change</h1>
+        <p class="text-lg text-sage-700 max-w-2xl mx-auto leading-relaxed">
+          The Serenity Spot is more than a planting project. It's an exercise in three frameworks that have shaped my thinking this semester: the <strong>8Cs of the Social Change Model</strong>, the <strong>Social Change Wheel</strong>, and Deepa Iyer's <strong>Social Change Ecosystem</strong>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ 8Cs ============ -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.2em] text-earth-500 text-xs mb-3">Social Change Model</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-sage-800 mb-3">The 8 Cs</h2>
+        <p class="text-sage-700 max-w-2xl mx-auto">Seven values move from the inside out, the individual, the group, the community, and converge on the eighth: <strong>Change</strong> itself.</p>
+      </div>
+
+      <!-- Individual values -->
+      <div class="mb-12">
+        <div class="leaf-divider mb-6">
+          <span class="font-serif text-2xl text-sage-700">Individual Values</span>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5">
+          <article class="bg-sage-50 border border-sage-100 rounded-2xl p-6 card-lift">
+            <p class="font-serif text-4xl text-sage-500 mb-1">C<span class="text-sm align-top">1</span></p>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Consciousness of Self</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Knowing your own beliefs, feelings, and motivations.</p>
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">In my project</p>
+            <p class="text-sm text-sage-700">I came into this work already knowing my values: honesty and trust, authenticity, and commitment. Growing up across Singapore, Malaysia, and India, and learning in international schools, I saw early how diverse experiences and perspectives generated new ideas, and how much an environment could either nurture or constrain that. UMD's North Campus, with its scarcity of green and social space, felt like one of those constraining environments. Recognizing that mismatch was what brought me into this project.</p>
+          </article>
+          <article class="bg-earth-50 border border-earth-100 rounded-2xl p-6 card-lift">
+            <p class="font-serif text-4xl text-sage-500 mb-1">C<span class="text-sm align-top">2</span></p>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Congruence</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Acting in line with your beliefs, consistently.</p>
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">In my project</p>
+            <p class="text-sm text-sage-700">For me, authenticity and Congruence were the same idea. Knowing what I valued was only step one; being intentional and in-line with those values, going a step beyond self-awareness, was what gave them meaning. As Co-President of Club Cricket, I had practiced this by ensuring my words and actions stayed aligned, and I carried that same standard into the redevelopment proposal.</p>
+          </article>
+          <article class="bg-sky/30 border border-sage-100 rounded-2xl p-6 card-lift">
+            <p class="font-serif text-4xl text-sage-500 mb-1">C<span class="text-sm align-top">3</span></p>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Commitment</h3>
+            <p class="text-sm text-sage-700/90 mb-3">The energy to keep going through friction.</p>
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">In my project</p>
+            <p class="text-sm text-sage-700">Commitment was one of the values I led with. From Club Cricket and from group projects, I had seen the drastic difference in synergy between teams whose members were genuinely passionate about the mission and those who weren't: the first group generated initiative and ideas, the second waited for someone else to act. This project asked for the first kind of energy, and I was committed to bringing it.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Group values -->
+      <div class="mb-12">
+        <div class="leaf-divider mb-6">
+          <span class="font-serif text-2xl text-sage-700">Group Values</span>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5">
+          <article class="bg-sage-100 border border-sage-200 rounded-2xl p-6 card-lift">
+            <p class="font-serif text-4xl text-earth-500 mb-1">C<span class="text-sm align-top">4</span></p>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Collaboration</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Working <em>with</em>, not for or alongside.</p>
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">In my project</p>
+            <p class="text-sm text-sage-700">Trust was the precondition for real collaboration, something I had practiced as Co-President of Club Cricket by fostering strong relationships with new and returning players alike. Even though this was an individual project, the work asked me to collaborate with experienced people who were the best at what they did, including the Vice President for Mental Health and Wellbeing and a senior campus planner. I learned to listen first, defer to their expertise where it mattered, and bring a student perspective where it was missing.</p>
+          </article>
+          <article class="bg-earth-100 border border-earth-200 rounded-2xl p-6 card-lift">
+            <p class="font-serif text-4xl text-earth-500 mb-1">C<span class="text-sm align-top">5</span></p>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Common Purpose</h3>
+            <p class="text-sm text-sage-700/90 mb-3">A shared "why" the group keeps returning to.</p>
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">In my project</p>
+            <p class="text-sm text-sage-700">Even though this was an individual project, the actors I spoke with all returned to the same orientation. The Vice President for Mental Health and Wellbeing, the senior campus planner, and the other people I consulted shared a purpose around improving and developing the spaces students live in. That convergence gave the work a clear direction: a more nature-driven campus that imbued calmness, peace, and unity.</p>
+          </article>
+          <article class="bg-sky/40 border border-sage-200 rounded-2xl p-6 card-lift">
+            <p class="font-serif text-4xl text-earth-500 mb-1">C<span class="text-sm align-top">6</span></p>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Controversy with Civility</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Disagreement held respectfully, in service of better outcomes.</p>
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">In my project</p>
+            <p class="text-sm text-sage-700">Navigating different perspectives was a constant in a project this broad. Each campus actor I spoke with held their own vision for what the pathway could become, and it was my responsibility to take in all of their suggestions and shape them into the final vision. Civility, here, meant making sure every viewpoint was heard and weighed before I made the call.</p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Community + Change -->
+      <div class="mb-2">
+        <div class="leaf-divider mb-6">
+          <span class="font-serif text-2xl text-sage-700">Community Value &amp; the 8th C</span>
+        </div>
+        <div class="grid md:grid-cols-2 gap-5">
+          <article class="bg-sky/50 border border-sage-200 rounded-2xl p-6 card-lift">
+            <p class="font-serif text-4xl text-sage-700 mb-1">C<span class="text-sm align-top">7</span></p>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Citizenship</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Belonging to, and being responsible for, a larger community.</p>
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">In my project</p>
+            <p class="text-sm text-sage-700">Citizenship ran through this project. I had long been an advocate for the international community at UMD and a believer that diverse perspectives generated new ideas, but the campus environment had to make that exchange possible. Proposing an adaptation of the pathway between the Computer Science Instructional Center (CSI) and the Brendan Iribe Center (IRB) was, for me, an act of belonging to North Campus and taking responsibility for it. This project allowed me to take responsibility for the UMD community as a whole.</p>
+          </article>
+          <article class="bg-earth-200 border border-earth-300 rounded-2xl p-6 card-lift">
+            <p class="font-serif text-4xl text-earth-700 mb-1">C<span class="text-sm align-top">8</span></p>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Change</h3>
+            <p class="text-sm text-sage-700/90 mb-3">The hub where the other seven Cs converge, change in self, in group, in community.</p>
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">In my project</p>
+            <p class="text-sm text-sage-700">The change was concrete: a corner of UMD's North Campus, the pathway between CSI and the Iribe Center, reshaped to be more nature-driven, more cozy, and more conducive to meeting new people than what was there. The upstream change was harder to point at, treating campus environment design as a mental-health intervention, not just a beautification project.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SOCIAL CHANGE WHEEL ============ -->
+    <section class="bg-sage-50 border-y border-sage-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+        <div class="text-center mb-12">
+          <p class="uppercase tracking-[0.2em] text-earth-500 text-xs mb-3">Toolkit</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-sage-800 mb-3">The Social Change Wheel</h2>
+          <p class="text-sage-700 max-w-2xl mx-auto">Social action takes many forms. The Wheel pushes us to ask: <em>which forms of action is this project actually doing</em>, and which ones could it reach for next?</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-5">
+
+          <article class="bg-white rounded-2xl p-6 border border-sage-100 card-lift">
+            <span class="inline-block text-[10px] uppercase tracking-widest text-sage-700 bg-sage-100 px-2 py-1 rounded mb-3">Spoke 1</span>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Direct Service</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Hands-on work that meets a need now.</p>
+            <p class="text-xs text-earth-500 uppercase tracking-widest mb-1">My work</p>
+            <p class="text-sm text-sage-700">Direct, on-the-ground design work: walking the site, drawing visual maps of where the changes could land, and selecting seating and tables that aligned with UMD's campus standard.</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 border border-sage-100 card-lift">
+            <span class="inline-block text-[10px] uppercase tracking-widest text-sage-700 bg-sage-100 px-2 py-1 rounded mb-3">Spoke 2</span>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Advocacy</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Speaking up for a policy or institutional change.</p>
+            <p class="text-xs text-earth-500 uppercase tracking-widest mb-1">My work</p>
+            <p class="text-sm text-sage-700">The proposal as a whole was an act of advocacy: speaking up for better seating, better space, and a campus environment that supported student wellbeing.</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 border border-sage-100 card-lift">
+            <span class="inline-block text-[10px] uppercase tracking-widest text-sage-700 bg-sage-100 px-2 py-1 rounded mb-3">Spoke 3</span>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Community Engagement</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Co-creating solutions with the people most affected.</p>
+            <p class="text-xs text-earth-500 uppercase tracking-widest mb-1">My work</p>
+            <p class="text-sm text-sage-700">The redesign was scoped to reach beyond a single user group. The pathway between CSI and the Iribe Center is travelled by students from across campus, with a particularly heavy concentration of computer science students, so the work was anchored in serving that broader community.</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 border border-sage-100 card-lift">
+            <span class="inline-block text-[10px] uppercase tracking-widest text-sage-700 bg-sage-100 px-2 py-1 rounded mb-3">Spoke 4</span>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Education &amp; Awareness</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Helping others see the issue.</p>
+            <p class="text-xs text-earth-500 uppercase tracking-widest mb-1">My work</p>
+            <p class="text-sm text-sage-700">This website and the proposal as a whole were built to do more than describe one project. The hope was to show other students that a campus change like this is reachable, and to inspire them to take on initiatives of their own.</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 border border-sage-100 card-lift">
+            <span class="inline-block text-[10px] uppercase tracking-widest text-sage-700 bg-sage-100 px-2 py-1 rounded mb-3">Spoke 5</span>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Civic Engagement</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Working through institutions and processes.</p>
+            <p class="text-xs text-earth-500 uppercase tracking-widest mb-1">My work</p>
+            <p class="text-sm text-sage-700">Working through campus institutions and processes: engaging the Facilities Student Advisory Subcommittee, the Architectural and Landscape Review Board (ALRB), and navigating UMD's broader approval process.</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 border border-sage-100 card-lift">
+            <span class="inline-block text-[10px] uppercase tracking-widest text-sage-700 bg-sage-100 px-2 py-1 rounded mb-3">Spoke 6</span>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Philanthropy</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Resourcing the work, money, materials, time.</p>
+            <p class="text-xs text-earth-500 uppercase tracking-widest mb-1">My work</p>
+            <p class="text-sm text-sage-700">Resourcing the work meant going where the funding lived. A submission to the Student Facilities Fund was the route to financing the redesign and putting student dollars behind a student-driven space.</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 border border-sage-100 card-lift">
+            <span class="inline-block text-[10px] uppercase tracking-widest text-sage-700 bg-sage-100 px-2 py-1 rounded mb-3">Spoke 7</span>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Community Organizing</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Building durable power among neighbors.</p>
+            <p class="text-xs text-earth-500 uppercase tracking-widest mb-1">My work</p>
+            <p class="text-sm text-sage-700">The underlying aim of the project was to create more social space for interactivity and community. Where seats and shade exist, organic organizing follows: study groups form, conversations begin, and a campus grows its own community over time.</p>
+          </article>
+
+          <article class="bg-white rounded-2xl p-6 border border-sage-100 card-lift">
+            <span class="inline-block text-[10px] uppercase tracking-widest text-sage-700 bg-sage-100 px-2 py-1 rounded mb-3">Spoke 8</span>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Socially Responsible Behavior</h3>
+            <p class="text-sm text-sage-700/90 mb-3">Personal practice that models the change.</p>
+            <p class="text-xs text-earth-500 uppercase tracking-widest mb-1">My work</p>
+            <p class="text-sm text-sage-700">The personal energy I put into this project was its own form of practice: investing in a space I would not personally use forever, in the hope that it would resonate with and serve a wide range of students for years to come.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ECOSYSTEM ROLES ============ -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.2em] text-earth-500 text-xs mb-3">Deepa Iyer's Framework</p>
+        <h2 class="font-serif text-4xl md:text-5xl text-sage-800 mb-3">Roles in the Social Change Ecosystem</h2>
+        <p class="text-sage-700 max-w-2xl mx-auto">No project moves with one kind of person. Building a physical space made these roles visible, every one of them was load-bearing.</p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 py-10 md:py-16 px-2 md:px-6">
+
+        <article class="bg-cream border-2 border-sage-400 rounded-2xl overflow-hidden role-card shadow-lg flex flex-col">
+          <header class="bg-sage-700 text-cream px-4 py-3 flex items-center justify-between border-b-2 border-sage-800">
+            <h3 class="font-serif text-2xl leading-none">Visionary</h3>
+            <span class="text-[10px] uppercase tracking-widest text-sage-200">"What if?"</span>
+          </header>
+          <div class="aspect-[4/3] border-b-2 border-sage-300 relative overflow-hidden">
+            <img src="assets/images/visionary.jpg" alt="Visionary, looking toward an imagined horizon" class="w-full h-full object-cover" />
+          </div>
+          <div class="px-5 py-4 flex-grow bg-cream">
+            <p class="font-serif text-base text-sage-800 italic leading-relaxed">Imagines a future not yet here, and refuses to let the group flinch from it.</p>
+          </div>
+          <footer class="bg-sage-50 border-t-2 border-dashed border-sage-300 px-5 py-3">
+            <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-1">Who held this</p>
+            <p class="text-sm text-sage-700"><strong>Atharv Umap (me).</strong> The enthusiastic idea generator who kept finding new directions to take the project further.</p>
+          </footer>
+        </article>
+
+        <article class="bg-cream border-2 border-sage-400 rounded-2xl overflow-hidden role-card shadow-lg flex flex-col">
+          <header class="bg-sage-700 text-cream px-4 py-3 flex items-center justify-between border-b-2 border-sage-800">
+            <h3 class="font-serif text-2xl leading-none">Weaver</h3>
+            <span class="text-[10px] uppercase tracking-widest text-sage-200">"Who else?"</span>
+          </header>
+          <div class="aspect-[4/3] border-b-2 border-sage-300 relative overflow-hidden">
+            <img src="assets/images/weaver.jpg" alt="Weaver, threading connections between people and departments" class="w-full h-full object-cover" />
+          </div>
+          <div class="px-5 py-4 flex-grow bg-cream">
+            <p class="font-serif text-base text-sage-800 italic leading-relaxed">Connects the dots between people, departments, and prior efforts.</p>
+          </div>
+          <footer class="bg-sage-50 border-t-2 border-dashed border-sage-300 px-5 py-3">
+            <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-1">Who held this</p>
+            <p class="text-sm text-sage-700"><strong>Atharv Umap (me).</strong> Compiling knowledge from people across departments, from Landscape and Special Services to Well-Being to Facilities Planning to Leadership Studies, and weaving their input into a single proposal.</p>
+          </footer>
+        </article>
+
+        <article class="bg-cream border-2 border-sage-400 rounded-2xl overflow-hidden role-card shadow-lg flex flex-col">
+          <header class="bg-sage-700 text-cream px-4 py-3 flex items-center justify-between border-b-2 border-sage-800">
+            <h3 class="font-serif text-2xl leading-none">Experimenter</h3>
+            <span class="text-[10px] uppercase tracking-widest text-sage-200">"Let's try."</span>
+          </header>
+          <div class="aspect-[4/3] border-b-2 border-sage-300 relative overflow-hidden">
+            <img src="assets/images/experimenter.jpg" alt="Experimenter, testing ideas in small, low-stakes ways" class="w-full h-full object-cover" />
+          </div>
+          <div class="px-5 py-4 flex-grow bg-cream">
+            <p class="font-serif text-base text-sage-800 italic leading-relaxed">Tests in small, low-stakes ways, proves it can work.</p>
+          </div>
+          <footer class="bg-sage-50 border-t-2 border-dashed border-sage-300 px-5 py-3">
+            <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-1">Who held this</p>
+            <p class="text-sm text-sage-700"><strong>Atharv Umap (me).</strong> Running the small prototypes, sending the form out across the Computer Science department, and reading what the 34 responses said about how the change would actually land.</p>
+          </footer>
+        </article>
+
+        <article class="bg-cream border-2 border-sage-400 rounded-2xl overflow-hidden role-card shadow-lg flex flex-col">
+          <header class="bg-sage-700 text-cream px-4 py-3 flex items-center justify-between border-b-2 border-sage-800">
+            <h3 class="font-serif text-2xl leading-none">Builder</h3>
+            <span class="text-[10px] uppercase tracking-widest text-sage-200">"Brick by brick."</span>
+          </header>
+          <div class="aspect-[4/3] border-b-2 border-sage-300 relative overflow-hidden">
+            <img src="assets/images/builder.jpg" alt="Builder, hands shaping the work" class="w-full h-full object-cover" />
+          </div>
+          <div class="px-5 py-4 flex-grow bg-cream">
+            <p class="font-serif text-base text-sage-800 italic leading-relaxed">Makes the systems, structures, and physical things that hold the work.</p>
+          </div>
+          <footer class="bg-sage-50 border-t-2 border-dashed border-sage-300 px-5 py-3">
+            <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-1">Who held this</p>
+            <p class="text-sm text-sage-700"><strong>Dr. David Myers</strong>, Associate Professor of Plant Science and Landscape Architecture, and the studio group that could pick this up next semester to design the space, brick by brick.</p>
+          </footer>
+        </article>
+
+        <article class="bg-cream border-2 border-sage-400 rounded-2xl overflow-hidden role-card shadow-lg flex flex-col">
+          <header class="bg-sage-700 text-cream px-4 py-3 flex items-center justify-between border-b-2 border-sage-800">
+            <h3 class="font-serif text-2xl leading-none">Caregiver</h3>
+            <span class="text-[10px] uppercase tracking-widest text-sage-200">"How are you?"</span>
+          </header>
+          <div class="aspect-[4/3] border-b-2 border-sage-300 relative overflow-hidden">
+            <img src="assets/images/caregiver.jpg" alt="Caregiver, tending to the people doing the work" class="w-full h-full object-cover" />
+          </div>
+          <div class="px-5 py-4 flex-grow bg-cream">
+            <p class="font-serif text-base text-sage-800 italic leading-relaxed">Tends to the people doing the work, and to the work itself.</p>
+          </div>
+          <footer class="bg-sage-50 border-t-2 border-dashed border-sage-300 px-5 py-3">
+            <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-1">Who held this</p>
+            <p class="text-sm text-sage-700"><strong>Dr. Warren Kelley</strong>, Senior Associate Vice President for Well-Being. His role on campus is care, and he tended to this project the same way: pointing me to the Student Facilities Fund and reminding me to anchor the proposal in real student demand.</p>
+          </footer>
+        </article>
+
+        <article class="bg-cream border-2 border-sage-400 rounded-2xl overflow-hidden role-card shadow-lg flex flex-col">
+          <header class="bg-sage-700 text-cream px-4 py-3 flex items-center justify-between border-b-2 border-sage-800">
+            <h3 class="font-serif text-2xl leading-none">Storyteller</h3>
+            <span class="text-[10px] uppercase tracking-widest text-sage-200">"Here's why."</span>
+          </header>
+          <div class="aspect-[4/3] border-b-2 border-sage-300 relative overflow-hidden">
+            <img src="assets/images/storyteller.jpg" alt="Storyteller, giving the project its voice" class="w-full h-full object-cover" />
+          </div>
+          <div class="px-5 py-4 flex-grow bg-cream">
+            <p class="font-serif text-base text-sage-800 italic leading-relaxed">Makes the work legible, to peers, to administrators, to future cohorts.</p>
+          </div>
+          <footer class="bg-sage-50 border-t-2 border-dashed border-sage-300 px-5 py-3">
+            <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-1">Who held this</p>
+            <p class="text-sm text-sage-700"><strong>Atharv Umap (me), through this website.</strong> Making the proposal, the timeline, and the reasoning behind it legible to anyone who wants to pick the work up next.</p>
+          </footer>
+        </article>
+
+        <article class="bg-cream border-2 border-sage-400 rounded-2xl overflow-hidden role-card shadow-lg flex flex-col">
+          <header class="bg-sage-700 text-cream px-4 py-3 flex items-center justify-between border-b-2 border-sage-800">
+            <h3 class="font-serif text-2xl leading-none">Disruptor</h3>
+            <span class="text-[10px] uppercase tracking-widest text-sage-200">"Why not?"</span>
+          </header>
+          <div class="aspect-[4/3] border-b-2 border-sage-300 relative overflow-hidden">
+            <img src="assets/images/disruptor.jpg" alt="Disruptor, naming what isn't working" class="w-full h-full object-cover" />
+          </div>
+          <div class="px-5 py-4 flex-grow bg-cream">
+            <p class="font-serif text-base text-sage-800 italic leading-relaxed">Names what's broken; refuses default answers.</p>
+          </div>
+          <footer class="bg-sage-50 border-t-2 border-dashed border-sage-300 px-5 py-3">
+            <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-1">Who held this</p>
+            <p class="text-sm text-sage-700"><strong>The ALRB and the FSAS.</strong> The Architectural and Landscape Review Board and the Facilities Student Advisory Subcommittee named the gaps I had missed and the conditions I had to meet, and refused to let the proposal move forward until those things were in place.</p>
+          </footer>
+        </article>
+
+        <article class="bg-cream border-2 border-sage-400 rounded-2xl overflow-hidden role-card shadow-lg flex flex-col">
+          <header class="bg-sage-700 text-cream px-4 py-3 flex items-center justify-between border-b-2 border-sage-800">
+            <h3 class="font-serif text-2xl leading-none">Healer</h3>
+            <span class="text-[10px] uppercase tracking-widest text-sage-200">"Repair."</span>
+          </header>
+          <div class="aspect-[4/3] border-b-2 border-sage-300 relative overflow-hidden">
+            <img src="assets/images/healer.jpg" alt="Healer, tending to the wounds the work touches" class="w-full h-full object-cover" />
+          </div>
+          <div class="px-5 py-4 flex-grow bg-cream">
+            <p class="font-serif text-base text-sage-800 italic leading-relaxed">Tends to the wounds, historical, relational, ecological, that the work touches.</p>
+          </div>
+          <footer class="bg-sage-50 border-t-2 border-dashed border-sage-300 px-5 py-3">
+            <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-1">Who held this</p>
+            <p class="text-sm text-sage-700"><strong>Pamela Scott</strong>, my instructor. The fallback point and mentor who helped me work through every challenge the project threw up, and the steady voice when the path forward was unclear.</p>
+          </footer>
+        </article>
+
+        <article class="bg-cream border-2 border-sage-400 rounded-2xl overflow-hidden role-card shadow-lg flex flex-col">
+          <header class="bg-sage-700 text-cream px-4 py-3 flex items-center justify-between border-b-2 border-sage-800">
+            <h3 class="font-serif text-2xl leading-none">Guide</h3>
+            <span class="text-[10px] uppercase tracking-widest text-sage-200">"Here's how."</span>
+          </header>
+          <div class="aspect-[4/3] border-b-2 border-sage-300 relative overflow-hidden">
+            <img src="assets/images/guide.jpg" alt="Guide, offering wisdom from having walked the path before" class="w-full h-full object-cover" />
+          </div>
+          <div class="px-5 py-4 flex-grow bg-cream">
+            <p class="font-serif text-base text-sage-800 italic leading-relaxed">Has done it before. Offers wisdom and warning.</p>
+          </div>
+          <footer class="bg-sage-50 border-t-2 border-dashed border-sage-300 px-5 py-3">
+            <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-1">Who held this</p>
+            <p class="text-sm text-sage-700"><strong>Ms. Karen Petroff</strong>, Director of Landscape and Special Services. She walked me through the practical considerations any campus greenspace has to answer, and pointed me to the right people for each next step the project needed.</p>
+          </footer>
+        </article>
+
+      </div>
+
+      <div class="mt-14 max-w-3xl mx-auto">
+        <blockquote class="pull-quote rounded-r-xl">
+          "An important shift was realizing that <em>I</em> didn't need to be every role. The project asked different things of me at different moments, and other people were already standing in the gaps."
+        </blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-sage-700 text-sage-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-9 h-9 rounded-full bg-cream text-sage-700 flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.8 0-5 2.2-5 5 0 .3 0 .6.1.9C5.3 8.5 4 10.1 4 12c0 2.2 1.8 4 4 4h3v5h2v-5h3c2.2 0 4-1.8 4-4 0-1.9-1.3-3.5-3.1-4.1.1-.3.1-.6.1-.9 0-2.8-2.2-5-5-5z"/></svg></span>
+          <span class="font-serif text-xl text-cream">The Serenity Spot</span>
+        </div>
+        <p class="text-sage-200 text-sm leading-relaxed">A student-led campus greenspace initiative, building room to breathe, to gather, and to belong.</p>
+      </div>
+      <div>
+        <h3 class="font-serif text-cream text-lg mb-3">Mental Health Resources</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://988lifeline.org" target="_blank" rel="noopener">988 Suicide &amp; Crisis Lifeline</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://www.nami.org" target="_blank" rel="noopener">NAMI</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://terplink.umd.edu/organization/active-minds" target="_blank" rel="noopener">Active Minds at UMD</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://counseling.umd.edu/" target="_blank" rel="noopener">UMD Counseling Center</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://www.crisistextline.org" target="_blank" rel="noopener">Crisis Text Line</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-serif text-cream text-lg mb-3">Site</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cream" href="index.html">Home</a></li>
+          <li><a class="hover:text-cream" href="issue.html">The Issue</a></li>
+          <li><a class="hover:text-cream" href="framework.html">Framework</a></li>
+          <li><a class="hover:text-cream" href="action.html">Action Plan</a></li>
+          <li><a class="hover:text-cream" href="involved.html">Get Involved</a></li>
+          <li><a class="hover:text-cream" href="reflection.html">Reflection</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-sage-600">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between text-sm text-sage-300">
+        <p>&copy; <span id="footer-year"></span> Atharv Umap. The Serenity Spot.</p>
+        <p class="italic font-serif">"In every walk with nature, one receives far more than they seek." · John Muir</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

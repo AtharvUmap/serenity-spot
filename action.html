@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Action Plan, The Serenity Spot</title>
+  <meta name="description" content="A semester-long timeline of how The Serenity Spot moved from idea to implementation, with insights from each phase." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage:  { 50:'#f4f6f0',100:'#e6ebda',200:'#cdd7b6',300:'#a8b988',400:'#8a9c66',500:'#718355',600:'#5a6a44',700:'#475437',800:'#3a442e',900:'#323a29' },
+            earth: { 50:'#faf6f1',100:'#f3ead9',200:'#e6d3b2',300:'#d4b482',400:'#bc8e54',500:'#926c44',600:'#7a583a',700:'#624632',800:'#523b2d',900:'#463329' },
+            sky:   '#a8dadc',
+            cream: '#f8f9fa'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"','Georgia','serif'],
+            sans:  ['Inter','system-ui','sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-cream text-sage-900">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur border-b border-sage-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="w-9 h-9 rounded-full bg-sage-500 text-cream flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.8 0-5 2.2-5 5 0 .3 0 .6.1.9C5.3 8.5 4 10.1 4 12c0 2.2 1.8 4 4 4h3v5h2v-5h3c2.2 0 4-1.8 4-4 0-1.9-1.3-3.5-3.1-4.1.1-.3.1-.6.1-.9 0-2.8-2.2-5-5-5z"/></svg></span>
+        <span class="font-serif text-xl text-sage-700">The Serenity Spot</span>
+      </a>
+      <button data-nav-toggle aria-expanded="false" aria-label="Toggle navigation" class="md:hidden p-2 rounded text-sage-700">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <nav data-nav-menu class="hidden md:flex absolute md:static top-full left-0 right-0 bg-cream md:bg-transparent border-b md:border-0 border-sage-100 flex-col md:flex-row gap-1 md:gap-6 px-4 md:px-0 py-4 md:py-0 text-sage-600">
+        <a data-nav-link href="index.html" class="hover:text-sage-700 transition">Home</a>
+        <a data-nav-link href="issue.html" class="hover:text-sage-700 transition">The Issue</a>
+        <a data-nav-link href="framework.html" class="hover:text-sage-700 transition">Framework</a>
+        <a data-nav-link href="action.html" class="hover:text-sage-700 transition">Action Plan</a>
+        <a data-nav-link href="involved.html" class="hover:text-sage-700 transition">Get Involved</a>
+        <a data-nav-link href="reflection.html" class="hover:text-sage-700 transition">Reflection</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HEADER ============ -->
+    <section class="bg-cream-textured">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 py-20 md:py-24 text-center">
+        <p class="uppercase tracking-[0.25em] text-sage-600 text-xs mb-4">Implementation</p>
+        <h1 class="font-serif text-5xl md:text-6xl text-sage-800 mb-5">The Action Plan</h1>
+        <p class="text-lg text-sage-700 max-w-2xl mx-auto leading-relaxed">
+          One semester. One corner of the campus. A loose plan, a willing team, and a steady accumulation of small wins.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ BEFORE / VISION ============ -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+      <div class="text-center mb-10">
+        <p class="uppercase tracking-[0.2em] text-earth-500 text-xs mb-3">Where it starts</p>
+        <h2 class="font-serif text-4xl text-sage-800">The plaza, and what I imagined.</h2>
+        <p class="text-sage-700 max-w-2xl mx-auto mt-3">A photograph from the construction of Iribe on the left, where the seating outside CSI shown is the same arrangement that remains in place today, paired with my initial sketch of what the space could become.</p>
+      </div>
+      <div class="grid md:grid-cols-5 gap-6 items-start">
+        <figure class="md:col-span-3">
+          <div class="rounded-3xl aspect-[4/3] overflow-hidden bg-sage-100">
+            <img src="assets/images/plaza.jpg" alt="The plaza during the construction of Iribe, showing the seating outside CSI that has remained unchanged since." class="w-full h-full object-cover" />
+          </div>
+          <figcaption class="text-center mt-3 text-sm text-sage-600 italic">The plaza during the construction of Iribe. The seating outside CSI is the same arrangement that remains in place today.</figcaption>
+        </figure>
+        <figure class="md:col-span-2">
+          <div class="rounded-3xl aspect-[3/4] overflow-hidden bg-white border border-sage-100">
+            <img src="assets/images/vision.jpg" alt="A hand-drawn before-and-after sketch of the CSI–IRB pathway, showing the empty space as it is and the gathering area I envisioned with trees, seating, and pockets for connection." class="w-full h-full object-contain" />
+          </div>
+          <figcaption class="text-center mt-3 text-sm text-sage-600 italic">My initial vision sketch, before and after in one frame.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ TIMELINE ============ -->
+    <section class="bg-sage-50 border-y border-sage-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 py-20">
+        <div class="text-center mb-12">
+          <p class="uppercase tracking-[0.2em] text-earth-500 text-xs mb-3">Semester Timeline</p>
+          <h2 class="font-serif text-4xl text-sage-800">From idea to ground.</h2>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item mb-10">
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">Weeks -6 to -4 · Project Generation</p>
+            <h3 class="font-serif text-2xl text-sage-800 mb-2">Choosing the project.</h3>
+            <p class="text-sage-700 leading-relaxed">I weighed three possible directions: a mental health and greenspace initiative, a UMD International Fair, and a UMD Opportunity Network. I landed on the mental health and greenspace project as the one I could most credibly move on inside a semester, and the one that sat closest to a problem I had felt firsthand on campus.</p>
+          </div>
+
+          <div class="timeline-item mb-10">
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">Weeks -4 to -2 · Connections</p>
+            <h3 class="font-serif text-2xl text-sage-800 mb-2">Finding the right people.</h3>
+            <p class="text-sage-700 leading-relaxed">I worked through the Campus Connections and Social Change Connections frames to identify who, inside and outside UMD, could move this project forward. That meant naming roles before names: facilities and grounds staff, mental health leaders, student peers, faculty advisors, and design practitioners beyond the university.</p>
+          </div>
+
+          <div class="timeline-item mb-10">
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">Weeks -2 to 0 · First Conversations</p>
+            <h3 class="font-serif text-2xl text-sage-800 mb-2">Talking to key actors.</h3>
+            <p class="text-sage-700 leading-relaxed">The most consequential first meeting was with Ms. Karen Petroff, Director of Landscape and Special Services. Her input pointed me toward the four practical questions any campus greenspace has to answer: the irrigation system, funding, designing the space, and maintaining the space over time.</p>
+          </div>
+
+          <div class="timeline-item mb-10">
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">Weeks 1–2 · Foundation</p>
+            <h3 class="font-serif text-2xl text-sage-800 mb-2">Building a working guide.</h3>
+            <p class="text-sage-700 leading-relaxed">I created a detailed social action guide to track the project end to end: key contacts, the considerations attached to each phase, and a checklist of everything I needed to accomplish. It became the working document I returned to every time the project got too big to hold in my head.</p>
+          </div>
+
+          <div class="timeline-item mb-10">
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">Weeks 3–4 · Outreach</p>
+            <h3 class="font-serif text-2xl text-sage-800 mb-2">Contacting connections for each phase.</h3>
+            <p class="text-sage-700 leading-relaxed">I reached out to two people whose roles spoke to different parts of what I was trying to build. Dr. David Myers, Associate Professor in the Department of Plant Science and Landscape Architecture, was referred by Ms. Petroff with the hope of working with a studio group to design the space. Dr. Warren Kelley, Senior Associate Vice President for Well-Being, was the contact for gauging the project's feasibility on the mental health side and for understanding how funding currently moves through the university.</p>
+          </div>
+
+          <div class="timeline-item mb-10">
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">Weeks 5–6 · Recalibration</p>
+            <h3 class="font-serif text-2xl text-sage-800 mb-2">An impasse, and a way around it.</h3>
+            <p class="text-sage-700 leading-relaxed">After my conversation with Dr. Myers, the project hit a wall. There was no path to bringing a studio group on this semester, and designing the space myself, without architectural training, was not realistic. I split the work into a short term and a long term plan: short term, add tables and seating to the plaza; long term, secure funding and submit a proposal that Dr. Myers could evaluate and pass to a studio group in the fall. In parallel, Dr. Kelley pointed me toward the Student Facilities Fund as a likely funding route, with the note that the proposal would carry more weight if I could show student demand on campus.</p>
+          </div>
+
+          <div class="timeline-item mb-10">
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">Weeks 7–8 · Demand &amp; Funding</p>
+            <h3 class="font-serif text-2xl text-sage-800 mb-2">Proving the need.</h3>
+            <p class="text-sage-700 leading-relaxed">I circulated a form across the Computer Science department to gauge whether new seating in the plaza would actually be used and what kind of furniture students wanted to see. I received 34 responses, with a clear majority saying they would use the space. With those responses, a price estimate, and the short term plan, I submitted an application to the Student Facilities Fund.</p>
+            <div class="grid sm:grid-cols-2 gap-4 mt-5 items-start">
+              <figure>
+                <div class="rounded-2xl overflow-hidden border border-sage-100 bg-white aspect-[4/3] p-3">
+                  <img src="assets/images/responses.jpg" alt="A chart showing the distribution of opinions from the 34 form responses about new seating in the plaza." class="w-full h-full object-contain" />
+                </div>
+                <figcaption class="text-xs text-sage-600 italic mt-2 text-center">Distribution of the 34 form responses.</figcaption>
+              </figure>
+              <figure>
+                <div class="rounded-2xl overflow-hidden border border-sage-100 bg-white aspect-[4/3]">
+                  <img src="assets/images/student_facilities_fund.jpg" alt="The first page of the Student Facilities Fund proposal I submitted." class="w-full h-full object-cover object-top" />
+                </div>
+                <figcaption class="text-xs text-sage-600 italic mt-2 text-center">First page of my Student Facilities Fund proposal.</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="timeline-item mb-10">
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">Weeks 9–10 · Approvals</p>
+            <h3 class="font-serif text-2xl text-sage-800 mb-2">Through the institution.</h3>
+            <p class="text-sage-700 leading-relaxed">A campus planner with UMD FM Facilities Planning, who also sits as a non-voting member of the Facilities Student Advisory Subcommittee (FSAS), responded with the next steps: gather formal letters of support, then meet with a senior campus planner about project approval. I drafted and secured a letter of support from the Leadership Studies department, reached out for formal support from a studio group, and contacted the senior campus planner about the path to the Architectural and Landscape Review Board (ALRB).</p>
+          </div>
+
+          <div class="timeline-item mb-10">
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">Weeks 11–12 · Pitfalls</p>
+            <h3 class="font-serif text-2xl text-sage-800 mb-2">What I couldn't unlock yet.</h3>
+            <p class="text-sage-700 leading-relaxed">The studio group's formal support is gated on having ALRB approval first. I was told to come back in July with that approval in hand for the project to be taken up by a studio group next semester. In the meantime, I built out the slide deck the ALRB requires with the full project detail, and I'm waiting on a Victor Stanley representative to come back on my questions about the tables I selected.</p>
+            <figure class="mt-5 max-w-sm">
+              <div class="rounded-2xl overflow-hidden border border-sage-100 bg-white">
+                <img src="assets/images/vstanley.jpg" alt="The Victor Stanley table model that meets UMD's site guidelines and most closely matches the furniture preferences from the student responses." class="w-full h-auto" />
+              </div>
+              <figcaption class="text-xs text-sage-600 italic mt-2 text-center">The Victor Stanley table that meets UMD guidelines and is closest to what students asked for.</figcaption>
+            </figure>
+          </div>
+
+          <div class="timeline-item">
+            <p class="text-xs uppercase tracking-widest text-earth-500 mb-1">Weeks 13–14 · Where it stands</p>
+            <h3 class="font-serif text-2xl text-sage-800 mb-2">Holding the position.</h3>
+            <p class="text-sage-700 leading-relaxed">Still waiting on the table prices. The FSAS has formally postponed my application to next semester to allow time for the ALRB approval and the final pricing detail to come in. The project sits on a clear next move rather than a stall, which is the position I want to hand off from.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSIGHTS ============ -->
+    <section class="bg-sage-700 text-cream">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 py-20">
+        <div class="text-center mb-12">
+          <p class="uppercase tracking-[0.2em] text-sage-200 text-xs mb-3">What I'm Taking With Me</p>
+          <h2 class="font-serif text-4xl md:text-5xl">Insights from the work.</h2>
+        </div>
+
+        <ol class="space-y-6">
+          <li class="bg-sage-600 rounded-2xl p-6">
+            <p class="font-serif text-3xl text-cream mb-2">01.</p>
+            <h3 class="font-serif text-2xl text-cream mb-2">Roles before names.</h3>
+            <p class="text-sage-100 leading-relaxed">Mapping who needed to be involved by role first, facilities, well-being, design, mentorship, made the outreach disciplined instead of opportunistic. By the time I started writing emails, I knew which conversations would unlock which parts of the project. The Campus Connections and Social Change Connections frame did the heavy lifting before I sent a single email.</p>
+          </li>
+          <li class="bg-sage-600 rounded-2xl p-6">
+            <p class="font-serif text-3xl text-cream mb-2">02.</p>
+            <h3 class="font-serif text-2xl text-cream mb-2">Plan with two horizons.</h3>
+            <p class="text-sage-100 leading-relaxed">When the studio group fell through in week five, splitting the project into a short term plan (add seating now) and a long term plan (hand a complete proposal to a studio group in the fall) was what kept it alive. A single timeline would have died at the impasse; a two-horizon plan turned the same setback into momentum on both ends.</p>
+          </li>
+          <li class="bg-sage-600 rounded-2xl p-6">
+            <p class="font-serif text-3xl text-cream mb-2">03.</p>
+            <h3 class="font-serif text-2xl text-cream mb-2">Hand off the position, not the project.</h3>
+            <p class="text-sage-100 leading-relaxed">The semester ended with the project postponed, but on a clear next move rather than a stall. That is a different kind of "complete" than finishing the build, and it is what makes the project sustainable past me. The social action guide, the proposal, and this website are the position I am handing off.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-sage-700 text-sage-100 border-t border-sage-600">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-9 h-9 rounded-full bg-cream text-sage-700 flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.8 0-5 2.2-5 5 0 .3 0 .6.1.9C5.3 8.5 4 10.1 4 12c0 2.2 1.8 4 4 4h3v5h2v-5h3c2.2 0 4-1.8 4-4 0-1.9-1.3-3.5-3.1-4.1.1-.3.1-.6.1-.9 0-2.8-2.2-5-5-5z"/></svg></span>
+          <span class="font-serif text-xl text-cream">The Serenity Spot</span>
+        </div>
+        <p class="text-sage-200 text-sm leading-relaxed">A student-led campus greenspace initiative, building room to breathe, to gather, and to belong.</p>
+      </div>
+      <div>
+        <h3 class="font-serif text-cream text-lg mb-3">Mental Health Resources</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://988lifeline.org" target="_blank" rel="noopener">988 Suicide &amp; Crisis Lifeline</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://www.nami.org" target="_blank" rel="noopener">NAMI</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://terplink.umd.edu/organization/active-minds" target="_blank" rel="noopener">Active Minds at UMD</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://counseling.umd.edu/" target="_blank" rel="noopener">UMD Counseling Center</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://www.crisistextline.org" target="_blank" rel="noopener">Crisis Text Line</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-serif text-cream text-lg mb-3">Site</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cream" href="index.html">Home</a></li>
+          <li><a class="hover:text-cream" href="issue.html">The Issue</a></li>
+          <li><a class="hover:text-cream" href="framework.html">Framework</a></li>
+          <li><a class="hover:text-cream" href="action.html">Action Plan</a></li>
+          <li><a class="hover:text-cream" href="involved.html">Get Involved</a></li>
+          <li><a class="hover:text-cream" href="reflection.html">Reflection</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-sage-600">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between text-sm text-sage-300">
+        <p>&copy; <span id="footer-year"></span> Atharv Umap. The Serenity Spot.</p>
+        <p class="italic font-serif">"In every walk with nature, one receives far more than they seek." · John Muir</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

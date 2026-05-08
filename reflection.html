@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reflection, The Serenity Spot</title>
+  <meta name="description" content="A personal reflection on building The Serenity Spot, what I learned, what I'm still sitting with, and what it meant." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage:  { 50:'#f4f6f0',100:'#e6ebda',200:'#cdd7b6',300:'#a8b988',400:'#8a9c66',500:'#718355',600:'#5a6a44',700:'#475437',800:'#3a442e',900:'#323a29' },
+            earth: { 50:'#faf6f1',100:'#f3ead9',200:'#e6d3b2',300:'#d4b482',400:'#bc8e54',500:'#926c44',600:'#7a583a',700:'#624632',800:'#523b2d',900:'#463329' },
+            sky:   '#a8dadc',
+            cream: '#f8f9fa'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"','Georgia','serif'],
+            sans:  ['Inter','system-ui','sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-cream text-sage-900">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur border-b border-sage-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="w-9 h-9 rounded-full bg-sage-500 text-cream flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.8 0-5 2.2-5 5 0 .3 0 .6.1.9C5.3 8.5 4 10.1 4 12c0 2.2 1.8 4 4 4h3v5h2v-5h3c2.2 0 4-1.8 4-4 0-1.9-1.3-3.5-3.1-4.1.1-.3.1-.6.1-.9 0-2.8-2.2-5-5-5z"/></svg></span>
+        <span class="font-serif text-xl text-sage-700">The Serenity Spot</span>
+      </a>
+      <button data-nav-toggle aria-expanded="false" aria-label="Toggle navigation" class="md:hidden p-2 rounded text-sage-700">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <nav data-nav-menu class="hidden md:flex absolute md:static top-full left-0 right-0 bg-cream md:bg-transparent border-b md:border-0 border-sage-100 flex-col md:flex-row gap-1 md:gap-6 px-4 md:px-0 py-4 md:py-0 text-sage-600">
+        <a data-nav-link href="index.html" class="hover:text-sage-700 transition">Home</a>
+        <a data-nav-link href="issue.html" class="hover:text-sage-700 transition">The Issue</a>
+        <a data-nav-link href="framework.html" class="hover:text-sage-700 transition">Framework</a>
+        <a data-nav-link href="action.html" class="hover:text-sage-700 transition">Action Plan</a>
+        <a data-nav-link href="involved.html" class="hover:text-sage-700 transition">Get Involved</a>
+        <a data-nav-link href="reflection.html" class="hover:text-sage-700 transition">Reflection</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HEADER ============ -->
+    <section class="bg-cream-textured">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 py-20 md:py-24 text-center">
+        <p class="uppercase tracking-[0.25em] text-sage-600 text-xs mb-4">Personal Reflection</p>
+        <h1 class="font-serif text-5xl md:text-6xl text-sage-800 mb-5">Reflection</h1>
+        <p class="text-lg text-sage-700 leading-relaxed">
+          A space to think out loud about what this project taught me, and what I'm still sitting with.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ ENTRIES ============ -->
+    <section class="max-w-3xl mx-auto px-4 sm:px-6 py-16">
+
+      <p class="text-sage-700 leading-relaxed text-lg italic mb-14">
+        Many of these reflections came out of an interview with Pamela Scott, my instructor for this course and the person who oversaw my efforts most closely across both semesters. The conversation moved through three threads: sustenance, process, and learning. The entries below trace each in turn, and close with what the semester taught me about my own leadership.
+      </p>
+
+      <article class="mb-16 relative">
+        <p class="text-xs uppercase tracking-widest text-earth-500 mb-2">Entry 01</p>
+        <h2 class="font-serif text-4xl text-sage-800 mb-4">Sustaining the spark.</h2>
+        <div class="prose prose-sage max-w-none text-sage-700 leading-relaxed space-y-4">
+          <p>The first idea that stayed with me is <em>sustenance</em>, but not in the way I expected. When someone asked me, "how have you seen my change effort progress?", I thought I'd talk about longevity, or the foundation I'd built for the future of the project. The answer that came back was different: what they had noticed in me was the sustained enthusiasm for the work itself, across two semesters of slow and uneven progress.</p>
+          <p>I was told I'd done an excellent job keeping my energy and motivation up even at moments when it would have been easy to disconnect. That landed because, honestly, those moments were real. There were stretches where I wasn't sure what to do next, and a real low point when I learned I wouldn't be able to hand the site off to a design group this semester. What I took from the conversation was that I'd collected myself well enough, and held a positive outward-facing mentality, that the people around me couldn't always see the doubt.</p>
+          <p>That is the lesson I want to keep. A leader has to hold both things at once: be honestly wary of the obstacles, the timelines, and the risks, while still carrying a visible optimism that others can rally around. You are the face of your own effort, and if your energy dips publicly, the project's energy dips with it. Being able to sustain that level of enthusiasm, and share it with every actor I ended up talking to, is, looking back, one of the biggest positives of this whole experience.</p>
+        </div>
+
+        <!-- Comic-style sparks scattered around the entry. Decorative only. -->
+        <span aria-hidden="true" class="pointer-events-none absolute -top-5 -left-14 w-7 h-7 text-earth-400 spark-twinkle" style="animation-delay:0s;--spark-rot:18deg;"><svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 1 L13.5 10.5 L23 12 L13.5 13.5 L12 23 L10.5 13.5 L1 12 L10.5 10.5 Z"/></svg></span>
+        <span aria-hidden="true" class="pointer-events-none absolute top-12 -right-14 w-9 h-9 text-earth-500 spark-twinkle" style="animation-delay:0.7s;--spark-rot:-32deg;"><svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 1 L13.5 10.5 L23 12 L13.5 13.5 L12 23 L10.5 13.5 L1 12 L10.5 10.5 Z"/></svg></span>
+        <span aria-hidden="true" class="pointer-events-none absolute top-32 -left-16 w-5 h-5 text-sage-400 spark-twinkle" style="animation-delay:1.1s;--spark-rot:55deg;"><svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 1 L13.5 10.5 L23 12 L13.5 13.5 L12 23 L10.5 13.5 L1 12 L10.5 10.5 Z"/></svg></span>
+        <span aria-hidden="true" class="pointer-events-none absolute -top-8 right-1/3 w-4 h-4 text-earth-300 spark-twinkle" style="animation-delay:0.4s;--spark-rot:-15deg;"><svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 1 L13.5 10.5 L23 12 L13.5 13.5 L12 23 L10.5 13.5 L1 12 L10.5 10.5 Z"/></svg></span>
+        <span aria-hidden="true" class="pointer-events-none absolute top-1/2 -right-10 w-6 h-6 text-earth-400 spark-twinkle" style="animation-delay:1.5s;--spark-rot:42deg;"><svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 1 L13.5 10.5 L23 12 L13.5 13.5 L12 23 L10.5 13.5 L1 12 L10.5 10.5 Z"/></svg></span>
+        <span aria-hidden="true" class="pointer-events-none absolute bottom-16 -right-12 w-5 h-5 text-sage-400 spark-twinkle" style="animation-delay:0.2s;--spark-rot:-50deg;"><svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 1 L13.5 10.5 L23 12 L13.5 13.5 L12 23 L10.5 13.5 L1 12 L10.5 10.5 Z"/></svg></span>
+        <span aria-hidden="true" class="pointer-events-none absolute -bottom-3 -left-12 w-7 h-7 text-earth-500 spark-twinkle" style="animation-delay:0.9s;--spark-rot:8deg;"><svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 1 L13.5 10.5 L23 12 L13.5 13.5 L12 23 L10.5 13.5 L1 12 L10.5 10.5 Z"/></svg></span>
+        <span aria-hidden="true" class="pointer-events-none absolute -bottom-5 left-1/4 w-3 h-3 text-earth-300 spark-twinkle" style="animation-delay:1.8s;--spark-rot:-28deg;"><svg viewBox="0 0 24 24" fill="currentColor" class="w-full h-full"><path d="M12 1 L13.5 10.5 L23 12 L13.5 13.5 L12 23 L10.5 13.5 L1 12 L10.5 10.5 Z"/></svg></span>
+      </article>
+
+      <hr class="border-sage-200 my-12" />
+
+      <article class="mb-16">
+        <p class="text-xs uppercase tracking-widest text-earth-500 mb-2">Entry 02</p>
+        <h2 class="font-serif text-4xl text-sage-800 mb-4">The space between knowing and doing.</h2>
+        <div class="prose prose-sage max-w-none text-sage-700 leading-relaxed space-y-4">
+          <p>Most of the project's friction lived in the gap between planning and doing. The planning phase had been thorough: the research, the conversations, the case I'd built. I knew what needed to happen next. The hard part was the implementation, where institutional progress stalled in a different way: I was continuously referred from person to person, with no streamlined path through the university. Even when I had a clear ask, getting it in front of the right person was its own multi-step project. There were stretches where the bottleneck wasn't the idea or the energy, but simply the act of sitting down and pushing the next call through.</p>
+          <p>The takeaway from the conversation was to reflect on the process while I'm still in it, not only at the end. If I'd treated the implementation phase as something to study in real time, building a small habit or pattern around how I track contacts and follow up, I could have turned ambiguity into a checklist for everyone involved. The exact path can't be standardized, every project and every university shapes the route differently, but the habit of writing down the route as you walk it is portable. That is what I am carrying into the next project I do.</p>
+        </div>
+      </article>
+
+      <hr class="border-sage-200 my-12" />
+
+      <article class="mb-16 relative">
+        <p class="text-xs uppercase tracking-widest text-earth-500 mb-2">Entry 03</p>
+        <h2 class="font-serif text-4xl text-sage-800 mb-4">A ripple of change.</h2>
+        <div class="prose prose-sage max-w-none text-sage-700 leading-relaxed space-y-4">
+          <p>One of the last things that has been sitting with me is the idea of unknown effects, the impact you can't see and won't get to track. A lot of my recent conversations have circled the disappointment of not seeing this project come fully to fruition this semester. On the surface, the delay is real: the seating and the redesign of the pathway haven't happened yet, which makes it easy to read the impact as limited.</p>
+          <p>A perspective shift came in one of those conversations: it is impossible to track how each meeting, each call, and each piece of writing inspires the people on the other side of it. The scope of impact is almost certainly wider than I can perceive. My work this semester may quietly give someone else permission to believe they can do this too, and that they can act on the issues they care about. That, more than the bench itself, is the world I want to live in, one where everyone believes they can be a leader and make social change.</p>
+          <p>This isn't an abstract idea for me. The original spark for The Serenity Spot came from watching a friend pour themselves into something cool for their own community. That action was the ripple I felt, and it taught me that passion and action don't argue people into believing they can lead, they simply show them. I'll keep building these ripples through this site, and I thoroughly hope they turn into a wave that betters both the UMD and the global community.</p>
+        </div>
+
+        <!-- Ripple centers, pushed outside the article body so they read
+             as background atmosphere rather than overlay on the text. -->
+        <span aria-hidden="true" class="ripple-center text-sky" style="top:-20px;left:-110px;width:60px;height:60px;">
+          <span class="ripple-ring" style="animation-delay:0s;"></span>
+          <span class="ripple-ring" style="animation-delay:1.6s;"></span>
+        </span>
+        <span aria-hidden="true" class="ripple-center text-sky" style="top:45%;right:-130px;width:80px;height:80px;">
+          <span class="ripple-ring" style="animation-delay:0.7s;"></span>
+          <span class="ripple-ring" style="animation-delay:2.3s;"></span>
+        </span>
+        <span aria-hidden="true" class="ripple-center text-sage-400" style="bottom:-80px;left:40%;width:60px;height:60px;">
+          <span class="ripple-ring" style="animation-delay:0.3s;"></span>
+          <span class="ripple-ring" style="animation-delay:1.9s;"></span>
+        </span>
+      </article>
+
+      <hr class="border-sage-200 my-12" />
+
+      <article class="mb-16">
+        <p class="text-xs uppercase tracking-widest text-earth-500 mb-2">Entry 04</p>
+        <h2 class="font-serif text-4xl text-sage-800 mb-4">The leader in me.</h2>
+        <div class="prose prose-sage max-w-none text-sage-700 leading-relaxed space-y-4">
+          <p>At the start of my leadership journey, I used to run away from leadership positions. I associated leaders with being confident, loud, and charismatic, what I now know as "The Great Man Theory." Progressing through the leadership minor, my MLEAD internship, and this course has not only shattered that assumption but let me thrive inside the work it once kept me out of.</p>
+          <p>The shift has been quiet but real: I've built self-efficacy across every domain I've stepped into, in sports, in my technical background, and now in a field I had no prior experience in whatsoever. I leave this semester assured of my own leadership across very different dimensions, and confident in whatever comes next.</p>
+        </div>
+      </article>
+
+    </section>
+
+    <!-- ============ MEANING-MAKING ============ -->
+    <section class="bg-sage-700 text-cream">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 py-20 text-center">
+        <p class="uppercase tracking-[0.2em] text-sage-200 text-xs mb-4">Meaning-Making</p>
+        <h2 class="font-serif text-4xl md:text-5xl mb-6">What this project means to me, now.</h2>
+        <p class="text-sage-100 leading-relaxed text-lg max-w-2xl mx-auto mb-8">
+          This project is a symbol for what I am capable of achieving, and what any individual can do when they put their mind and heart into it. I could have chosen a Computer Science-related project. I could have decided to take on something less time-intensive to secure a guaranteed result. But I didn't. I chose passion, I chose change, I chose my community. This project will serve as a reminder of what leadership means to me, and the values I hope to represent throughout my personal and professional life.
+        </p>
+        <blockquote id="meaning-quote" class="pull-quote rounded-r-xl bg-sage-600 hover:bg-sage-500 text-cream border-cream/40 max-w-xl mx-auto text-left cursor-pointer select-none transition-colors" title="Click to toggle Shakespearean">
+          <span id="meaning-quote-text">"Know yourself. Know what you stand for. All that's left is to show you to the world."</span>
+          <footer class="mt-3 text-sm not-italic text-sage-200 font-sans">Atharv Umap, May 2026</footer>
+        </blockquote>
+        <p class="text-xs italic text-sage-200/70 mt-3 text-center">click for fun!</p>
+      </div>
+    </section>
+
+    <!-- ============ NEXT ============ -->
+    <section class="max-w-4xl mx-auto px-4 sm:px-6 py-20 text-center">
+      <h2 class="font-serif text-3xl text-sage-800 mb-4">If this resonates,</h2>
+      <p class="text-sage-700 max-w-xl mx-auto mb-6">…and you're thinking about your own project, the Starter Kit is the most concrete thing I can hand you.</p>
+      <a href="involved.html#starter-kit" class="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-cream font-medium px-6 py-3 rounded-full transition">
+        Open the Starter Kit →
+      </a>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-sage-700 text-sage-100 border-t border-sage-600">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-9 h-9 rounded-full bg-cream text-sage-700 flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.8 0-5 2.2-5 5 0 .3 0 .6.1.9C5.3 8.5 4 10.1 4 12c0 2.2 1.8 4 4 4h3v5h2v-5h3c2.2 0 4-1.8 4-4 0-1.9-1.3-3.5-3.1-4.1.1-.3.1-.6.1-.9 0-2.8-2.2-5-5-5z"/></svg></span>
+          <span class="font-serif text-xl text-cream">The Serenity Spot</span>
+        </div>
+        <p class="text-sage-200 text-sm leading-relaxed">A student-led campus greenspace initiative, building room to breathe, to gather, and to belong.</p>
+      </div>
+      <div>
+        <h3 class="font-serif text-cream text-lg mb-3">Mental Health Resources</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://988lifeline.org" target="_blank" rel="noopener">988 Suicide &amp; Crisis Lifeline</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://www.nami.org" target="_blank" rel="noopener">NAMI</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://terplink.umd.edu/organization/active-minds" target="_blank" rel="noopener">Active Minds at UMD</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://counseling.umd.edu/" target="_blank" rel="noopener">UMD Counseling Center</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://www.crisistextline.org" target="_blank" rel="noopener">Crisis Text Line</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-serif text-cream text-lg mb-3">Site</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cream" href="index.html">Home</a></li>
+          <li><a class="hover:text-cream" href="issue.html">The Issue</a></li>
+          <li><a class="hover:text-cream" href="framework.html">Framework</a></li>
+          <li><a class="hover:text-cream" href="action.html">Action Plan</a></li>
+          <li><a class="hover:text-cream" href="involved.html">Get Involved</a></li>
+          <li><a class="hover:text-cream" href="reflection.html">Reflection</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-sage-600">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between text-sm text-sage-300">
+        <p>&copy; <span id="footer-year"></span> Atharv Umap. The Serenity Spot.</p>
+        <p class="italic font-serif">"In every walk with nature, one receives far more than they seek." · John Muir</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
+  <script>
+    // Click the meaning-making quote to toggle modern <-> Shakespearean,
+    // with a per-character scramble animation that resolves left-to-right.
+    (function () {
+      const modern = '"Know yourself. Know what you stand for. All that\'s left is to show you to the world."';
+      const shakespeare = '"Know thyself. Knoweth what thee standeth f\'r. All that\'s hath left is to showeth thee to the w\'rld."';
+      const pool = "abcdefghijklmnopqrstuvwxyz.,'";
+      const block = document.getElementById('meaning-quote');
+      const text = document.getElementById('meaning-quote-text');
+      if (!block || !text) return;
+      let mode = 'modern';
+      let animating = false;
+
+      function scrambleTo(target, duration) {
+        animating = true;
+        const len = target.length;
+        const resolveAt = Array.from({ length: len }, (_, i) => {
+          const linear = i / Math.max(len - 1, 1);
+          const noise = Math.random() * 0.4;
+          return Math.min(duration * 0.95, duration * (0.2 + linear * 0.55 + noise));
+        });
+        const t0 = performance.now();
+        function frame(now) {
+          const elapsed = now - t0;
+          let out = '';
+          for (let i = 0; i < len; i++) {
+            const tc = target.charAt(i);
+            // Preserve whitespace so line wrapping stays locked to the target text
+            if (tc === ' ' || tc === '\n' || tc === '\t') out += tc;
+            else if (elapsed >= resolveAt[i]) out += tc;
+            else out += pool.charAt(Math.floor(Math.random() * pool.length));
+          }
+          text.textContent = out;
+          if (elapsed < duration) requestAnimationFrame(frame);
+          else { text.textContent = target; animating = false; }
+        }
+        requestAnimationFrame(frame);
+      }
+
+      block.addEventListener('click', function () {
+        if (animating) return;
+        if (mode === 'modern') { scrambleTo(shakespeare, 1800); mode = 'shakespeare'; }
+        else { scrambleTo(modern, 1800); mode = 'modern'; }
+      });
+    })();
+  </script>
+</body>
+</html>

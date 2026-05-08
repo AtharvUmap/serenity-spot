@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Issue, The Serenity Spot</title>
+  <meta name="description" content="Research on student mental health, the Nature Deficit, and the case for campus greenspace." />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sage:  { 50:'#f4f6f0',100:'#e6ebda',200:'#cdd7b6',300:'#a8b988',400:'#8a9c66',500:'#718355',600:'#5a6a44',700:'#475437',800:'#3a442e',900:'#323a29' },
+            earth: { 50:'#faf6f1',100:'#f3ead9',200:'#e6d3b2',300:'#d4b482',400:'#bc8e54',500:'#926c44',600:'#7a583a',700:'#624632',800:'#523b2d',900:'#463329' },
+            sky:   '#a8dadc',
+            cream: '#f8f9fa'
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"','Georgia','serif'],
+            sans:  ['Inter','system-ui','sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="bg-cream text-sage-900">
+  <a href="#main" class="skip-link">Skip to main content</a>
+
+  <header class="sticky top-0 z-40 bg-cream/90 backdrop-blur border-b border-sage-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="w-9 h-9 rounded-full bg-sage-500 text-cream flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.8 0-5 2.2-5 5 0 .3 0 .6.1.9C5.3 8.5 4 10.1 4 12c0 2.2 1.8 4 4 4h3v5h2v-5h3c2.2 0 4-1.8 4-4 0-1.9-1.3-3.5-3.1-4.1.1-.3.1-.6.1-.9 0-2.8-2.2-5-5-5z"/></svg></span>
+        <span class="font-serif text-xl text-sage-700">The Serenity Spot</span>
+      </a>
+      <button data-nav-toggle aria-expanded="false" aria-label="Toggle navigation" class="md:hidden p-2 rounded text-sage-700">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+      <nav data-nav-menu class="hidden md:flex absolute md:static top-full left-0 right-0 bg-cream md:bg-transparent border-b md:border-0 border-sage-100 flex-col md:flex-row gap-1 md:gap-6 px-4 md:px-0 py-4 md:py-0 text-sage-600">
+        <a data-nav-link href="index.html" class="hover:text-sage-700 transition">Home</a>
+        <a data-nav-link href="issue.html" class="hover:text-sage-700 transition">The Issue</a>
+        <a data-nav-link href="framework.html" class="hover:text-sage-700 transition">Framework</a>
+        <a data-nav-link href="action.html" class="hover:text-sage-700 transition">Action Plan</a>
+        <a data-nav-link href="involved.html" class="hover:text-sage-700 transition">Get Involved</a>
+        <a data-nav-link href="reflection.html" class="hover:text-sage-700 transition">Reflection</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HEADER ============ -->
+    <section class="bg-cream-textured">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 py-20 md:py-24 text-center">
+        <p class="uppercase tracking-[0.25em] text-sage-600 text-xs mb-4">Research &amp; Context</p>
+        <h1 class="font-serif text-5xl md:text-6xl text-sage-800 mb-5">The Issue</h1>
+        <p class="text-lg text-sage-700 max-w-2xl mx-auto leading-relaxed">
+          Mental health is more openly discussed than ever, and yet the crisis on college campuses persists, including here at the University of Maryland. This page lays out the evidence behind a proposal to redesign the plaza outside the Computer Science Instructional Center (CSI) as a greenspace built to support student mental health.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ ON CAMPUS ============ -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+      <div class="grid md:grid-cols-3 gap-6 mb-14">
+        <article class="bg-white border border-sage-100 rounded-2xl p-7 card-lift">
+          <p class="font-serif text-6xl text-earth-500 mb-4 leading-none tracking-tight">60%</p>
+          <h3 class="font-serif text-xl text-sage-800 mb-2 leading-snug">College students meeting the criteria for at least one mental-health problem</h3>
+          <p class="text-sm text-sage-600">2020–21 school year, cited by the American Psychological Association (Abrams)</p>
+        </article>
+        <article class="bg-white border border-sage-100 rounded-2xl p-7 card-lift">
+          <p class="font-serif text-6xl text-earth-500 mb-4 leading-none tracking-tight">10.5%</p>
+          <h3 class="font-serif text-xl text-sage-800 mb-2 leading-snug">UMD students rated high-risk for suicidality</h3>
+          <p class="text-sm text-sage-600">UMD Counseling Center, Annual Report 2023–24</p>
+        </article>
+        <article class="bg-white border border-sage-100 rounded-2xl p-7 card-lift">
+          <p class="font-serif text-6xl text-earth-500 mb-4 leading-none tracking-tight">2,000+</p>
+          <h3 class="font-serif text-xl text-sage-800 mb-2 leading-snug">UMD students completing the in-take assessment behind these figures</h3>
+          <p class="text-sm text-sage-600">UMD Counseling Center, Annual Report 2023–24</p>
+        </article>
+      </div>
+
+      <div class="max-w-4xl mx-auto">
+        <p class="uppercase tracking-[0.2em] text-sage-600 text-xs mb-3">Mental Health on Campus</p>
+        <h2 class="font-serif text-4xl text-sage-800 mb-5">A quieter crisis, in plain sight.</h2>
+        <p class="text-sage-700 leading-relaxed mb-4">
+          In recent years, mental health has become more understood and openly discussed in public life. Many recognize the severe impacts it can have on an individual, and how vital awareness and support are in combatting them. Yet the crisis remains: an article in the American Psychological Association cites a study finding that during the 2020–2021 school year, <strong>more than 60% of college students met the criteria for at least one mental health problem</strong> (Abrams). The numbers are staggering, and they need a response.
+        </p>
+        <p class="text-sage-700 leading-relaxed mb-4">
+          The pattern is visible at the University of Maryland, too. UMD's Counseling Center 2023–24 Annual Report, drawing on more than 2,000 in-take assessments, found that <strong>10.5% of students were rated high-risk for suicidality</strong>, 4.0% had considered it in the past two weeks, and 7.9% had attempted it ("Annual Report 2023–24"). And these figures are restricted to suicidality alone; mental-health distress also takes the form of disorders, depression, and chronic anxiety that a single measure cannot capture.
+        </p>
+        <p class="text-sage-700 leading-relaxed">
+          Existing services, counseling centers, workshops, and destressing sessions, do important work meeting students one at a time. But what if the campus environment itself, the space students live in every day, could do part of the work?
+        </p>
+      </div>
+
+      <figure class="mt-12 max-w-4xl mx-auto">
+        <div class="rounded-2xl overflow-hidden shadow-md ring-1 ring-sage-100 bg-white">
+          <img src="assets/images/graph.jpg" alt="Bar chart comparing 2022 to 2023 and 2023 to 2024 UMD student responses to the prompt 'I have thoughts about ending my life,' on a 0 to 4 scale." class="w-full h-auto block" />
+        </div>
+        <figcaption class="text-xs text-sage-600 italic mt-3 leading-relaxed text-center">Distribution of UMD student responses to "I have thoughts about ending my life," 2022&ndash;23 vs. 2023&ndash;24. Source: UMD Counseling Center, <em>Annual Report 2023&ndash;24</em>.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ============ NATURE DEFICIT ============ -->
+    <section class="bg-sage-50 border-y border-sage-100">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <p class="uppercase tracking-[0.2em] text-earth-500 text-xs mb-3">The Nature Deficit</p>
+          <h2 class="font-serif text-4xl md:text-5xl text-sage-800 mb-4">What we lose when greenspace disappears.</h2>
+          <p class="text-sage-700 leading-relaxed">
+            Research on academic greenspace points the other direction. Where green campus spaces exist, even modestly, students report a "feeling of detachment from daily stress," "positive emotions like happiness and energy," and a stronger trigger for "social belonging" (Foellmer et al.). The deficit, in other words, is reversible.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+          <article class="bg-white rounded-2xl p-7 card-lift border border-sage-100">
+            <div class="w-12 h-12 rounded-xl bg-sage-100 text-sage-700 flex items-center justify-center mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>
+            </div>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Detachment from stress</h3>
+            <p class="text-sm text-sage-700/90 leading-relaxed">Greenspace gives students a psychological "step away" from the academic grind, a passive but powerful reset between classes (Foellmer et al.).</p>
+          </article>
+          <article class="bg-white rounded-2xl p-7 card-lift border border-sage-100">
+            <div class="w-12 h-12 rounded-xl bg-earth-100 text-earth-500 flex items-center justify-center mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 21s-7-5-7-11a7 7 0 0114 0c0 6-7 11-7 11z"/></svg>
+            </div>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Happiness &amp; energy</h3>
+            <p class="text-sm text-sage-700/90 leading-relaxed">Time in green campus spaces is linked to positive emotions like happiness and energy, the building blocks of resilience between hard classes (Foellmer et al.).</p>
+          </article>
+          <article class="bg-white rounded-2xl p-7 card-lift border border-sage-100">
+            <div class="w-12 h-12 rounded-xl bg-sky/30 text-sage-700 flex items-center justify-center mb-4">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16 14a4 4 0 10-8 0M12 12V4M5 21h14"/></svg>
+            </div>
+            <h3 class="font-serif text-xl text-sage-800 mb-2">Social belonging</h3>
+            <p class="text-sm text-sage-700/90 leading-relaxed">Outdoor seating triggers informal social encounters, the small, unplanned conversations that knit a campus into a community (Foellmer et al.).</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DATA / REPORTS ============ -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+      <p class="uppercase tracking-[0.2em] text-sage-600 text-xs mb-3 text-center">Data &amp; Reports</p>
+      <h2 class="font-serif text-4xl text-sage-800 mb-12 text-center">What the evidence says.</h2>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <article class="bg-white border border-sage-100 rounded-2xl p-7">
+          <span class="inline-block text-[10px] uppercase tracking-widest text-earth-500 bg-earth-100 px-2 py-1 rounded mb-3">National Article</span>
+          <h3 class="font-serif text-2xl text-sage-800 mb-2">"Student mental health is in crisis. Campuses are rethinking their approach."</h3>
+          <p class="text-sage-700/90 text-sm leading-relaxed mb-1">Abrams, Zara. <em>American Psychological Association</em>, Oct. 2022.</p>
+          <p class="text-sage-700/90 text-sm leading-relaxed mb-4">An APA feature on the post-pandemic surge in college mental-health distress, the source of the 60%-of-students figure that anchors much of this page (Abrams).</p>
+          <a href="https://www.apa.org/monitor/2022/10/mental-health-campus-care" target="_blank" rel="noopener" class="text-sage-700 text-sm font-medium hover:text-sage-800 underline-offset-4 hover:underline">Read the full article →</a>
+        </article>
+
+        <article class="bg-white border border-sage-100 rounded-2xl p-7">
+          <span class="inline-block text-[10px] uppercase tracking-widest text-sage-700 bg-sage-100 px-2 py-1 rounded mb-3">Research</span>
+          <h3 class="font-serif text-2xl text-sage-800 mb-2">"Academic Greenspace and Well-Being, Can Campus Landscape be Therapeutic?"</h3>
+          <p class="text-sage-700/90 text-sm leading-relaxed mb-1">Foellmer, Kistemann &amp; Anthonj. <em>Wellbeing, Space and Society</em>, Vol. 2, 2021.</p>
+          <p class="text-sage-700/90 text-sm leading-relaxed mb-4">Finds that academic greenspace promotes detachment from daily stress, positive emotions like happiness and energy, and a stronger sense of social belonging (Foellmer et al.).</p>
+          <a href="https://doi.org/10.1016/j.wss.2020.100003" target="_blank" rel="noopener" class="text-sage-700 text-sm font-medium hover:text-sage-800 underline-offset-4 hover:underline">Read the study →</a>
+        </article>
+
+        <article class="bg-white border border-sage-100 rounded-2xl p-7">
+          <span class="inline-block text-[10px] uppercase tracking-widest text-sage-700 bg-sky/40 px-2 py-1 rounded mb-3">Campus Data</span>
+          <h3 class="font-serif text-2xl text-sage-800 mb-2">UMD Counseling Center, Annual Report 2023–24</h3>
+          <p class="text-sage-700/90 text-sm leading-relaxed mb-1">Counseling Center, University of Maryland, 2024.</p>
+          <p class="text-sage-700/90 text-sm leading-relaxed mb-4">Reports on more than 2,000 in-take assessments at UMD: 10.5% of students rated high-risk for suicidality, 4.0% with recent ideation, and 7.9% with a past attempt.</p>
+          <a href="https://counseling.umd.edu/sites/default/files/2024-10/Annual-Report-2023-2024.pdf" target="_blank" rel="noopener" class="text-sage-700 text-sm font-medium hover:text-sage-800 underline-offset-4 hover:underline">View the data →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ FROM ISSUE TO ACTION ============ -->
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 pb-20">
+      <div class="bg-gradient-to-br from-sage-100 to-sky/40 rounded-3xl p-10 md:p-14">
+        <p class="uppercase tracking-[0.2em] text-earth-500 text-xs mb-3">From Issue to Action</p>
+        <h2 class="font-serif text-3xl md:text-4xl text-sage-800 mb-5">A proposal: the CSI plaza.</h2>
+        <p class="text-sage-700 leading-relaxed mb-4">
+          Existing services meet students one at a time. The campus environment, by contrast, reaches every student who walks through it, every day, without an appointment. The plaza outside the Computer Science Instructional Center (CSI) on the UMD campus currently lacks adequate seating and greenery: the inverse of the conditions the research describes as supportive.
+        </p>
+        <p class="text-sage-700 leading-relaxed mb-6">
+          We propose redesigning that space as a greenspace built to foster social interaction, unity, and improved mental health for the students who pass through it every day.
+        </p>
+        <a href="action.html" class="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-cream font-medium px-6 py-3 rounded-full transition">
+          See the Action Plan →
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ MEDIA REPOSITORY ============ -->
+    <section class="bg-sage-700 text-cream">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20">
+        <div class="text-center mb-12">
+          <p class="uppercase tracking-[0.2em] text-sage-200 text-xs mb-3">Media Repository</p>
+          <h2 class="font-serif text-4xl md:text-5xl mb-4">Curated videos &amp; articles.</h2>
+          <p class="text-sage-200 max-w-2xl mx-auto">A growing library of interesting pieces I encountered while researching this project. Click any card for a short summary and link.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+
+          <button data-modal-open="modal-media-1" class="text-left card-lift bg-sage-600 hover:bg-sage-500 transition rounded-2xl overflow-hidden">
+            <div class="aspect-video overflow-hidden">
+              <img src="assets/images/media-ted.jpg" alt="Samantha Mariano speaking at TEDxWVU" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5">
+              <p class="text-[10px] uppercase tracking-widest text-sage-200 mb-2">Video · TEDx Talk</p>
+              <h3 class="font-serif text-xl text-cream">"We can help our head space by improving our green space."</h3>
+            </div>
+          </button>
+
+          <button data-modal-open="modal-media-2" class="text-left card-lift bg-sage-600 hover:bg-sage-500 transition rounded-2xl overflow-hidden">
+            <div class="aspect-video overflow-hidden">
+              <img src="assets/images/media-article.jpg" alt="Healing Landscapes resource preview" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5">
+              <p class="text-[10px] uppercase tracking-widest text-sage-200 mb-2">Resource · Healing Landscapes</p>
+              <h3 class="font-serif text-xl text-cream">Therapeutic Landscapes Network: research, case studies, and design.</h3>
+            </div>
+          </button>
+
+          <button data-modal-open="modal-media-3" class="text-left card-lift bg-sage-600 hover:bg-sage-500 transition rounded-2xl overflow-hidden">
+            <div class="aspect-video overflow-hidden">
+              <img src="assets/images/media-pod.jpg" alt="Students on a green campus quad" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-5">
+              <p class="text-[10px] uppercase tracking-widest text-sage-200 mb-2">Opinion · US News &amp; World Report</p>
+              <h3 class="font-serif text-xl text-cream">Campus nature as a quiet antidote to student stress.</h3>
+            </div>
+          </button>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ MODALS ============ -->
+  <div id="modal-media-1" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-media-1-title" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" data-modal-close aria-label="Close">×</button>
+      <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-2">Video · TEDx Talk</p>
+      <h3 id="modal-media-1-title" class="font-serif text-3xl text-sage-800 mb-3">"We can help our head space by improving our green space."</h3>
+      <p class="text-sage-700 text-sm mb-4"><em>Samantha Mariano · TEDxWVU · September 2021</em></p>
+      <p class="text-sage-700 leading-relaxed mb-4">A West Virginia University student frames mental health and environmental wellness as one shared problem rather than two adjacent ones. Her thesis, that better greenspace and better mental-health resources are complementary, not competing investments, is the same conviction that drives Atharv Umap. The Serenity Spot.</p>
+      <a href="https://www.ted.com/talks/samantha_mariano_we_can_help_our_head_space_by_improving_our_green_space" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-cream px-4 py-2 rounded-full text-sm">Watch the talk →</a>
+    </div>
+  </div>
+
+  <div id="modal-media-2" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-media-2-title" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" data-modal-close aria-label="Close">×</button>
+      <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-2">Resource · Healing Landscapes</p>
+      <h3 id="modal-media-2-title" class="font-serif text-3xl text-sage-800 mb-3">Therapeutic Landscapes Network</h3>
+      <p class="text-sage-700 text-sm mb-4"><em>healinglandscapes.org</em></p>
+      <p class="text-sage-700 leading-relaxed mb-4">A clearinghouse of research, case studies, and design guidance for landscapes that support human health and well-being. The Network was an early influence on how I thought about evidence-based design for The Serenity Spot, in particular the idea that a small, well-considered greenspace can do meaningful therapeutic work without needing to be a full park.</p>
+      <a href="https://healinglandscapes.org/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-cream px-4 py-2 rounded-full text-sm">Visit the site →</a>
+    </div>
+  </div>
+
+  <div id="modal-media-3" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="modal-media-3-title" aria-hidden="true">
+    <div class="modal-card">
+      <button class="modal-close" data-modal-close aria-label="Close">×</button>
+      <p class="text-[10px] uppercase tracking-widest text-earth-500 mb-2">Opinion · US News &amp; World Report</p>
+      <h3 id="modal-media-3-title" class="font-serif text-3xl text-sage-800 mb-3">Campus nature as a quiet antidote to student stress.</h3>
+      <p class="text-sage-700 text-sm mb-4"><em>US News &amp; World Report · September 2025</em></p>
+      <p class="text-sage-700 leading-relaxed mb-4">An opinion piece arguing that the natural environment on a college campus is itself an underused mental-health resource, and that institutions should treat greenspace as part of student wellbeing infrastructure rather than as ornamentation. The framing reinforces the case for The Serenity Spot: that the most accessible support is sometimes the one already underfoot.</p>
+      <a href="https://www.usnews.com/opinion/articles/2025-09-03/college-students-campus-nature-stress-mental-health" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-sage-600 hover:bg-sage-700 text-cream px-4 py-2 rounded-full text-sm">Read the article →</a>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-sage-700 text-sage-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-14 grid md:grid-cols-3 gap-10">
+      <div>
+        <div class="flex items-center gap-2 mb-3">
+          <span class="w-9 h-9 rounded-full bg-cream text-sage-700 flex items-center justify-center"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c-2.8 0-5 2.2-5 5 0 .3 0 .6.1.9C5.3 8.5 4 10.1 4 12c0 2.2 1.8 4 4 4h3v5h2v-5h3c2.2 0 4-1.8 4-4 0-1.9-1.3-3.5-3.1-4.1.1-.3.1-.6.1-.9 0-2.8-2.2-5-5-5z"/></svg></span>
+          <span class="font-serif text-xl text-cream">The Serenity Spot</span>
+        </div>
+        <p class="text-sage-200 text-sm leading-relaxed">A student-led campus greenspace initiative, building room to breathe, to gather, and to belong.</p>
+      </div>
+      <div>
+        <h3 class="font-serif text-cream text-lg mb-3">Mental Health Resources</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://988lifeline.org" target="_blank" rel="noopener">988 Suicide &amp; Crisis Lifeline</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://www.nami.org" target="_blank" rel="noopener">NAMI</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://terplink.umd.edu/organization/active-minds" target="_blank" rel="noopener">Active Minds at UMD</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://counseling.umd.edu/" target="_blank" rel="noopener">UMD Counseling Center</a></li>
+          <li><a class="hover:text-cream underline-offset-4 hover:underline" href="https://www.crisistextline.org" target="_blank" rel="noopener">Crisis Text Line</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-serif text-cream text-lg mb-3">Site</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cream" href="index.html">Home</a></li>
+          <li><a class="hover:text-cream" href="issue.html">The Issue</a></li>
+          <li><a class="hover:text-cream" href="framework.html">Framework</a></li>
+          <li><a class="hover:text-cream" href="action.html">Action Plan</a></li>
+          <li><a class="hover:text-cream" href="involved.html">Get Involved</a></li>
+          <li><a class="hover:text-cream" href="reflection.html">Reflection</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-sage-600">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-5 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between text-sm text-sage-300">
+        <p>&copy; <span id="footer-year"></span> Atharv Umap. The Serenity Spot.</p>
+        <p class="italic font-serif">"In every walk with nature, one receives far more than they seek." · John Muir</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('footer-year').textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
