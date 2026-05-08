@@ -20,9 +20,8 @@ Plus shared assets:
 ## How to use
 
 ### 1. Preview locally
-The site is fully static. The simplest way to preview:
+The site is fully static. From the repo root:
 ```bash
-cd /Users/atharvumap/Documents/Projects/social-action-hub
 python3 -m http.server 8000
 ```
 Then visit <http://localhost:8000>.
